@@ -16,6 +16,11 @@ export default {
       fontFamily: {
         sans: ['Assistant', 'system-ui', 'sans-serif'],
         display: ['Varela Round', 'Assistant', 'sans-serif'],
+        hero: ['Varela Round', 'sans-serif'],
+      },
+      fontSize: {
+        'display-xl': ['6rem', { lineHeight: '1', letterSpacing: '-0.02em' }],
+        'display-lg': ['4.5rem', { lineHeight: '1', letterSpacing: '-0.02em' }],
       },
       colors: {
         border: "hsl(var(--border))",
