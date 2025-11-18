@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Assistant', 'system-ui', 'sans-serif'],
+        display: ['Varela Round', 'Assistant', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -46,6 +50,18 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        nature: {
+          DEFAULT: "hsl(var(--nature-green))",
+        },
+        earth: {
+          DEFAULT: "hsl(var(--earth-brown))",
+        },
+        gold: {
+          DEFAULT: "hsl(var(--warm-gold))",
+        },
+        cream: {
+          DEFAULT: "hsl(var(--soft-cream))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
