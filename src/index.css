@@ -8,54 +8,57 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 5%;
+    --background: 42 45% 98%;
+    --foreground: 28 30% 20%;
 
-    --card: 0 0% 98%;
-    --card-foreground: 0 0% 5%;
+    --card: 0 0% 100%;
+    --card-foreground: 28 30% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 5%;
+    --popover-foreground: 28 30% 20%;
 
-    --primary: 142 70% 35%;
+    --primary: 142 45% 35%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 32 95% 55%;
-    --secondary-foreground: 0 0% 5%;
+    --secondary: 28 65% 65%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 42 30% 95%;
+    --muted-foreground: 28 20% 45%;
 
-    --accent: 28 80% 50%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 38 85% 65%;
+    --accent-foreground: 28 30% 20%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 142 70% 35%;
+    --border: 42 30% 88%;
+    --input: 42 30% 88%;
+    --ring: 142 45% 35%;
 
-    --radius: 0rem;
+    --radius: 0.75rem;
 
-    /* Bold modern colors */
-    --nature-green: 142 70% 35%;
-    --earth-brown: 28 60% 45%;
-    --warm-gold: 32 95% 55%;
-    --vibrant-orange: 15 90% 55%;
+    /* Custom colors for farm theme */
+    --nature-green: 142 55% 45%;
+    --earth-brown: 28 55% 55%;
+    --warm-gold: 38 75% 60%;
+    --soft-cream: 42 60% 95%;
     
-    /* Modern gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(142 70% 25%) 0%, hsl(15 90% 45%) 100%);
-    --gradient-accent: linear-gradient(90deg, hsl(32 95% 55%) 0%, hsl(15 90% 55%) 100%);
-    --gradient-overlay: linear-gradient(180deg, transparent 0%, hsl(0 0% 5% / 0.8) 100%);
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(142 55% 45% / 0.95), hsl(38 75% 60% / 0.85), hsl(142 45% 35% / 0.9));
+    --gradient-section: linear-gradient(135deg, hsl(42 60% 98%), hsl(42 45% 96%), hsl(42 60% 97%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.9), hsl(42 45% 99% / 0.85));
+    --gradient-accent: linear-gradient(120deg, hsl(142 55% 45% / 0.1), hsl(38 75% 60% / 0.1));
     
-    /* Dramatic shadows */
-    --shadow-brutal: 8px 8px 0px hsl(0 0% 5%);
-    --shadow-float: 0 25px 50px hsl(0 0% 5% / 0.15);
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsl(28 30% 20% / 0.08);
+    --shadow-card: 0 10px 40px hsl(28 30% 20% / 0.12);
+    --shadow-glow: 0 0 40px hsl(142 55% 45% / 0.2);
+    --shadow-lifted: 0 20px 60px hsl(28 30% 20% / 0.15), 0 8px 20px hsl(28 30% 20% / 0.1);
     
-    /* Snappy transitions */
+    /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-pop: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -122,46 +125,30 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
-  .shadow-brutal {
-    box-shadow: 8px 8px 0px hsl(var(--foreground));
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_60px_hsl(28_30%_20%_/_0.15)];
   }
   
-  .hover-brutal {
-    @apply transition-all duration-200;
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-[0_0_40px_hsl(142_55%_45%_/_0.3)];
   }
   
-  .hover-brutal:hover {
-    transform: translate(-4px, -4px);
-    box-shadow: 12px 12px 0px hsl(var(--foreground));
-  }
-  
-  .text-outline {
-    -webkit-text-stroke: 2px hsl(var(--foreground));
-    -webkit-text-fill-color: transparent;
-    paint-order: stroke fill;
+  .glass-card {
+    @apply bg-background/60 backdrop-blur-xl border border-border/50;
   }
   
   .animate-fade-in-up {
-    animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: fadeInUp 0.6s ease-out;
   }
   
-  .animate-slide-in-right {
-    animation: slideInRight 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .animate-slide-in-left {
-    animation: slideInLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .rotate-text {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
   }
   
   @keyframes fadeInUp {
     from {
       opacity: 0;
-      transform: translateY(40px);
+      transform: translateY(30px);
     }
     to {
       opacity: 1;
@@ -169,25 +156,12 @@ All colors MUST be HSL.
     }
   }
   
-  @keyframes slideInRight {
-    from {
-      opacity: 0;
-      transform: translateX(60px);
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
     }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  @keyframes slideInLeft {
-    from {
-      opacity: 0;
-      transform: translateX(-60px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
+    50% {
+      transform: translateY(-20px);
     }
   }
 }
