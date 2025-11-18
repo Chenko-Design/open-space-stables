@@ -45,15 +45,20 @@ All colors MUST be HSL.
     --soft-cream: 42 60% 95%;
     
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(142 55% 45% / 0.9), hsl(38 75% 60% / 0.8));
-    --gradient-section: linear-gradient(180deg, hsl(42 60% 98%), hsl(42 45% 96%));
+    --gradient-hero: linear-gradient(135deg, hsl(142 55% 45% / 0.95), hsl(38 75% 60% / 0.85), hsl(142 45% 35% / 0.9));
+    --gradient-section: linear-gradient(135deg, hsl(42 60% 98%), hsl(42 45% 96%), hsl(42 60% 97%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.9), hsl(42 45% 99% / 0.85));
+    --gradient-accent: linear-gradient(120deg, hsl(142 55% 45% / 0.1), hsl(38 75% 60% / 0.1));
     
     /* Shadows */
     --shadow-soft: 0 4px 20px hsl(28 30% 20% / 0.08);
     --shadow-card: 0 10px 40px hsl(28 30% 20% / 0.12);
+    --shadow-glow: 0 0 40px hsl(142 55% 45% / 0.2);
+    --shadow-lifted: 0 20px 60px hsl(28 30% 20% / 0.15), 0 8px 20px hsl(28 30% 20% / 0.1);
     
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -121,11 +126,23 @@ All colors MUST be HSL.
 
 @layer utilities {
   .hover-lift {
-    @apply transition-transform duration-300 hover:-translate-y-1;
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_60px_hsl(28_30%_20%_/_0.15)];
+  }
+  
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-[0_0_40px_hsl(142_55%_45%_/_0.3)];
+  }
+  
+  .glass-card {
+    @apply bg-background/60 backdrop-blur-xl border border-border/50;
   }
   
   .animate-fade-in-up {
     animation: fadeInUp 0.6s ease-out;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
   }
   
   @keyframes fadeInUp {
@@ -136,6 +153,15 @@ All colors MUST be HSL.
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
     }
   }
 }
