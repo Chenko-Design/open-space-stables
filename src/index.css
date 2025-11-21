@@ -142,7 +142,7 @@ All colors MUST be HSL.
   }
   
   .animate-float {
-    animation: float 6s ease-in-out infinite;
+    animation: float 3s ease-in-out infinite;
   }
   
   @keyframes fadeInUp {
