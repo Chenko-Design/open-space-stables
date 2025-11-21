@@ -8,53 +8,53 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 42 45% 98%;
-    --foreground: 28 30% 20%;
+    --background: 0 0% 100%;
+    --foreground: 155 23% 23%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 28 30% 20%;
+    --card: 0 0% 98%;
+    --card-foreground: 155 23% 23%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 28 30% 20%;
+    --popover-foreground: 155 23% 23%;
 
-    --primary: 142 45% 35%;
+    --primary: 155 23% 23%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 28 65% 65%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 42 75% 60%;
+    --secondary-foreground: 155 23% 23%;
 
-    --muted: 42 30% 95%;
-    --muted-foreground: 28 20% 45%;
+    --muted: 155 10% 92%;
+    --muted-foreground: 155 15% 45%;
 
-    --accent: 38 85% 65%;
-    --accent-foreground: 28 30% 20%;
+    --accent: 42 75% 60%;
+    --accent-foreground: 155 23% 23%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 42 30% 88%;
-    --input: 42 30% 88%;
-    --ring: 142 45% 35%;
+    --border: 155 10% 88%;
+    --input: 155 10% 88%;
+    --ring: 42 75% 60%;
 
     --radius: 0.75rem;
 
-    /* Custom colors for farm theme */
-    --nature-green: 142 55% 45%;
-    --earth-brown: 28 55% 55%;
-    --warm-gold: 38 75% 60%;
-    --soft-cream: 42 60% 95%;
+    /* Custom colors for farm theme - based on logo */
+    --nature-green: 155 23% 23%;
+    --earth-brown: 30 35% 45%;
+    --warm-gold: 42 75% 60%;
+    --soft-cream: 40 40% 95%;
     
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(142 55% 45% / 0.95), hsl(38 75% 60% / 0.85), hsl(142 45% 35% / 0.9));
-    --gradient-section: linear-gradient(135deg, hsl(42 60% 98%), hsl(42 45% 96%), hsl(42 60% 97%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.9), hsl(42 45% 99% / 0.85));
-    --gradient-accent: linear-gradient(120deg, hsl(142 55% 45% / 0.1), hsl(38 75% 60% / 0.1));
+    --gradient-hero: linear-gradient(135deg, hsl(155 23% 23% / 0.85), hsl(155 30% 30% / 0.75));
+    --gradient-section: linear-gradient(135deg, hsl(0 0% 100%), hsl(0 0% 98%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.9), hsl(0 0% 99% / 0.85));
+    --gradient-accent: linear-gradient(120deg, hsl(42 75% 60% / 0.1), hsl(42 85% 70% / 0.1));
     
     /* Shadows */
-    --shadow-soft: 0 4px 20px hsl(28 30% 20% / 0.08);
-    --shadow-card: 0 10px 40px hsl(28 30% 20% / 0.12);
-    --shadow-glow: 0 0 40px hsl(142 55% 45% / 0.2);
-    --shadow-lifted: 0 20px 60px hsl(28 30% 20% / 0.15), 0 8px 20px hsl(28 30% 20% / 0.1);
+    --shadow-soft: 0 4px 20px hsl(155 23% 23% / 0.1);
+    --shadow-card: 0 10px 40px hsl(155 23% 23% / 0.12);
+    --shadow-glow: 0 0 40px hsl(42 75% 60% / 0.3);
+    --shadow-lifted: 0 20px 60px hsl(155 23% 23% / 0.15), 0 8px 20px hsl(155 23% 23% / 0.1);
     
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -71,33 +71,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 28 35% 12%;
-    --foreground: 42 45% 95%;
+    --background: 155 23% 12%;
+    --foreground: 0 0% 95%;
 
-    --card: 28 30% 15%;
-    --card-foreground: 42 45% 95%;
+    --card: 155 20% 15%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 28 30% 15%;
-    --popover-foreground: 42 45% 95%;
+    --popover: 155 23% 12%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 142 55% 50%;
+    --primary: 155 30% 30%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 28 50% 40%;
-    --secondary-foreground: 42 45% 95%;
+    --secondary: 42 75% 60%;
+    --secondary-foreground: 155 23% 12%;
 
-    --muted: 28 25% 20%;
-    --muted-foreground: 42 30% 65%;
+    --muted: 155 20% 18%;
+    --muted-foreground: 155 10% 65%;
 
-    --accent: 38 75% 55%;
-    --accent-foreground: 28 35% 12%;
+    --accent: 42 75% 60%;
+    --accent-foreground: 155 23% 12%;
 
-    --destructive: 0 62.8% 50%;
-    --destructive-foreground: 42 45% 95%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 95%;
 
-    --border: 28 25% 25%;
-    --input: 28 25% 25%;
-    --ring: 142 55% 50%;
+    --border: 155 20% 25%;
+    --input: 155 20% 25%;
+    --ring: 42 75% 60%;
     
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -126,11 +126,11 @@ All colors MUST be HSL.
 
 @layer utilities {
   .hover-lift {
-    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_60px_hsl(28_30%_20%_/_0.15)];
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_60px_hsl(155_23%_23%_/_0.15)];
   }
   
   .hover-glow {
-    @apply transition-all duration-300 hover:shadow-[0_0_40px_hsl(142_55%_45%_/_0.3)];
+    @apply transition-all duration-300 hover:shadow-[0_0_40px_hsl(42_75%_60%_/_0.4)];
   }
   
   .glass-card {
