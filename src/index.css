@@ -17,7 +17,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 155 23% 23%;
 
-    --primary: 155 23% 23%;
+    --primary: 154 100% 11%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 42 75% 60%;
@@ -39,22 +39,22 @@ All colors MUST be HSL.
     --radius: 0.75rem;
 
     /* Custom colors for farm theme - based on logo */
-    --nature-green: 155 23% 23%;
+    --nature-green: 154 100% 11%;
     --earth-brown: 30 35% 45%;
     --warm-gold: 42 75% 60%;
     --soft-cream: 40 40% 95%;
     
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(155 23% 23% / 0.85), hsl(155 30% 30% / 0.75));
+    --gradient-hero: linear-gradient(135deg, hsl(154 100% 11% / 0.85), hsl(154 100% 15% / 0.75));
     --gradient-section: linear-gradient(135deg, hsl(0 0% 100%), hsl(0 0% 98%));
     --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.9), hsl(0 0% 99% / 0.85));
     --gradient-accent: linear-gradient(120deg, hsl(42 75% 60% / 0.1), hsl(42 85% 70% / 0.1));
     
     /* Shadows */
-    --shadow-soft: 0 4px 20px hsl(155 23% 23% / 0.1);
-    --shadow-card: 0 10px 40px hsl(155 23% 23% / 0.12);
+    --shadow-soft: 0 4px 20px hsl(154 100% 11% / 0.1);
+    --shadow-card: 0 10px 40px hsl(154 100% 11% / 0.12);
     --shadow-glow: 0 0 40px hsl(42 75% 60% / 0.3);
-    --shadow-lifted: 0 20px 60px hsl(155 23% 23% / 0.15), 0 8px 20px hsl(155 23% 23% / 0.1);
+    --shadow-lifted: 0 20px 60px hsl(154 100% 11% / 0.15), 0 8px 20px hsl(154 100% 11% / 0.1);
     
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -71,16 +71,16 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 155 23% 12%;
+    --background: 154 100% 11%;
     --foreground: 0 0% 95%;
 
-    --card: 155 20% 15%;
+    --card: 154 50% 15%;
     --card-foreground: 0 0% 95%;
 
-    --popover: 155 23% 12%;
+    --popover: 154 100% 11%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 155 30% 30%;
+    --primary: 154 100% 18%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 42 75% 60%;
@@ -95,8 +95,8 @@ All colors MUST be HSL.
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 95%;
 
-    --border: 155 20% 25%;
-    --input: 155 20% 25%;
+    --border: 154 50% 25%;
+    --input: 154 50% 25%;
     --ring: 42 75% 60%;
     
     --sidebar-background: 240 5.9% 10%;
@@ -126,7 +126,7 @@ All colors MUST be HSL.
 
 @layer utilities {
   .hover-lift {
-    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_60px_hsl(155_23%_23%_/_0.15)];
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_60px_hsl(154_100%_11%_/_0.15)];
   }
   
   .hover-glow {
