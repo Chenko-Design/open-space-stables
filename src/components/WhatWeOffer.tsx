@@ -18,7 +18,6 @@ import shockedIcon from "@/assets/icons/shocked.png";
 interface ServiceCard {
   title: string | React.ReactNode;
   icon: React.ReactNode;
-  link: string;
 }
 
 const WhatWeOffer = () => {
@@ -26,8 +25,7 @@ const WhatWeOffer = () => {
     // שורה 1
     {
       title: "רכיבה טיפולית",
-      icon: <img src={therapyHorseIcon} alt="רכיבה טיפולית" className="w-16 h-16" />,
-      link: "#"
+      icon: <img src={therapyHorseIcon} alt="רכיבה טיפולית" className="w-16 h-16" />
     },
     {
       title: (
@@ -37,8 +35,7 @@ const WhatWeOffer = () => {
           על הספקטרום
         </>
       ),
-      icon: <img src={sunIcon} alt="מרכז יום" className="w-16 h-16" />,
-      link: "#"
+      icon: <img src={sunIcon} alt="מרכז יום" className="w-16 h-16" />
     },
     {
       title: (
@@ -48,8 +45,7 @@ const WhatWeOffer = () => {
           "קהילה בצמיחה"
         </>
       ),
-      icon: <img src={plantIcon} alt="קהילה בצמיחה" className="w-16 h-16" />,
-      link: "#"
+      icon: <img src={plantIcon} alt="קהילה בצמיחה" className="w-16 h-16" />
     },
     {
       title: (
@@ -59,14 +55,12 @@ const WhatWeOffer = () => {
           "המכינה"
         </>
       ),
-      icon: <img src={livingTogetherIcon} alt="חמכניה" className="w-16 h-16" />,
-      link: "#"
+      icon: <img src={livingTogetherIcon} alt="חמכניה" className="w-16 h-16" />
     },
     // שורה 2 - הפוך
     {
       title: "שירות לאומי מיוחד",
-      icon: <img src={heartHandIcon} alt="שירות לאומי" className="w-16 h-16" />,
-      link: "#"
+      icon: <img src={heartHandIcon} alt="שירות לאומי" className="w-16 h-16" />
     },
     {
       title: (
@@ -76,8 +70,7 @@ const WhatWeOffer = () => {
           שירות בחווה
         </>
       ),
-      icon: <img src={volunteeringIcon} alt="קהומונה" className="w-16 h-16" />,
-      link: "#"
+      icon: <img src={volunteeringIcon} alt="קהומונה" className="w-16 h-16" />
     },
     {
       title: (
@@ -87,45 +80,37 @@ const WhatWeOffer = () => {
           בעלי חיים
         </>
       ),
-      icon: <img src={rabbitIcon} alt="טיפול בבעלי חיים" className="w-16 h-16" />,
-      link: "#"
+      icon: <img src={rabbitIcon} alt="טיפול בבעלי חיים" className="w-16 h-16" />
     },
     {
       title: "רכיבה ספורטיבית מתקדמת",
-      icon: <img src={horseRidingIcon} alt="רכיבה ספורטיבית" className="w-16 h-16" />,
-      link: "#"
+      icon: <img src={horseRidingIcon} alt="רכיבה ספורטיבית" className="w-16 h-16" />
     },
     // שורה 3 - הפוך
     {
       title: "PTSD",
-      icon: <img src={shockedIcon} alt="PTSD" className="w-16 h-16" />,
-      link: "#"
+      icon: <img src={shockedIcon} alt="PTSD" className="w-16 h-16" />
     },
     {
       title: "לימוד רכיבה",
-      icon: <img src={sportRidingIcon} alt="לימוד רכיבה" className="w-16 h-16" />,
-      link: "#"
+      icon: <img src={sportRidingIcon} alt="לימוד רכיבה" className="w-16 h-16" />
     },
     {
       title: "נוער בסיכון",
-      icon: <img src={teamIcon} alt="נוער בסיכון" className="w-16 h-16" />,
-      link: "#"
+      icon: <img src={teamIcon} alt="נוער בסיכון" className="w-16 h-16" />
     },
     {
       title: "כלבנות טיפולית",
-      icon: <img src={dogIcon} alt="כלבנות טיפולית" className="w-16 h-16" />,
-      link: "#"
+      icon: <img src={dogIcon} alt="כלבנות טיפולית" className="w-16 h-16" />
     },
     // שורה 4 - הפוך
     {
       title: '"הרוכב הצעיר"',
-      icon: <img src={buddyIcon} alt="הרוכב הצעיר" className="w-16 h-16" />,
-      link: "#"
+      icon: <img src={buddyIcon} alt="הרוכב הצעיר" className="w-16 h-16" />
     },
     {
       title: "קורסי הכשרה למדריכים ומטפלים",
-      icon: <img src={friendlyIcon} alt="קורסי הכשרה" className="w-16 h-16" />,
-      link: "#"
+      icon: <img src={friendlyIcon} alt="קורסי הכשרה" className="w-16 h-16" />
     },
     {
       title: (
@@ -135,8 +120,7 @@ const WhatWeOffer = () => {
           טראומה
         </>
       ),
-      icon: <img src={equalIcon} alt="קורס טראומה" className="w-16 h-16" />,
-      link: "#"
+      icon: <img src={equalIcon} alt="קורס טראומה" className="w-16 h-16" />
     },
     {
       title: (
@@ -146,8 +130,7 @@ const WhatWeOffer = () => {
           מדריכים
         </>
       ),
-      icon: <img src={drivingIcon} alt="הכשרת מדריכים" className="w-16 h-16" />,
-      link: "#"
+      icon: <img src={drivingIcon} alt="הכשרת מדריכים" className="w-16 h-16" />
     }
   ];
 
@@ -161,9 +144,8 @@ const WhatWeOffer = () => {
           
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6 mt-12" dir="rtl">
             {services.map((service, index) => (
-              <a
+              <div
                 key={index}
-                href={service.link}
                 className="group bg-background/80 backdrop-blur-sm rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col items-center justify-center text-center gap-4 border border-border/50 h-[180px]"
               >
                 <div className="text-primary transition-transform duration-300 group-hover:scale-110">
@@ -172,7 +154,7 @@ const WhatWeOffer = () => {
                 <h3 className="text-base md:text-lg font-semibold text-foreground">
                   {service.title}
                 </h3>
-              </a>
+              </div>
             ))}
           </div>
         </div>
