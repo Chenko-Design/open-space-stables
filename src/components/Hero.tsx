@@ -38,7 +38,7 @@ const Hero = () => {
           alt="חוות המרחב הפתוח" 
           className="w-32 md:w-40 mx-auto mb-6 animate-fade-in-up"
         />
-        <h1 className="font-sans font-bold text-4xl md:text-6xl text-white mb-4 animate-fade-in-up"
+        <h1 className="font-sans font-bold text-5xl md:text-7xl text-white mb-4 animate-fade-in-up"
             style={{ 
               animationDelay: '0.1s',
               textShadow: '-1px -1px 0 hsl(var(--primary)), 1px -1px 0 hsl(var(--primary)), -1px 1px 0 hsl(var(--primary)), 1px 1px 0 hsl(var(--primary))'
