@@ -30,7 +30,7 @@ const WhatWeOffer = () => {
       link: "#"
     },
     {
-      title: "מרכז יום לבגירים על הספקטרום",
+      title: "מרכז יום לבוגרים על הספקטרום",
       icon: <img src={sunIcon} alt="מרכז יום" className="w-16 h-16" />,
       link: "#"
     },
