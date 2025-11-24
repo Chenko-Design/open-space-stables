@@ -14,7 +14,7 @@ const Contact = () => {
                   צרו קשר
                 </h2>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-xl mx-auto">
                 <div className="group flex items-start gap-4 p-4 rounded-2xl hover:bg-secondary/5 transition-all">
                   <div className="bg-primary/10 hover:bg-primary/20 p-3 rounded-full flex-shrink-0 group-hover:scale-110 transition-all">
                     <Phone className="w-6 h-6 text-primary" />
