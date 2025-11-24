@@ -1,12 +1,15 @@
 import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const Contact = () => {
+  const { ref, isVisible } = useScrollReveal();
+  
   return (
-    <section id="contact" className="py-24 bg-gradient-to-b from-muted to-background">
+    <section ref={ref} id="contact" className="py-24 bg-gradient-to-b from-muted to-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
+        <div className={`max-w-4xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}>
           <div className="glass-card shadow-2xl border-2 border-border/50 rounded-3xl overflow-hidden">
             <div className="p-8 md:p-12">
               <div className="text-center mb-12 animate-fade-in-up">

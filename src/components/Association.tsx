@@ -1,10 +1,13 @@
 import galopLogo from "@/assets/galop-logo.png";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const Association = () => {
+  const { ref, isVisible } = useScrollReveal();
+  
   return (
-    <section id="association" className="py-24 bg-white">
+    <section ref={ref} id="association" className="py-24 bg-white">
       <div className="container mx-auto px-8 sm:px-12 md:px-16 lg:px-[128px] xl:px-[192px] 2xl:px-[256px]">
-        <div className="max-w-7xl mx-auto animate-fade-in-up">
+        <div className={`max-w-7xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}>
           <div className="flex items-center justify-center gap-8 mb-12">
             <img 
               src={galopLogo} 
