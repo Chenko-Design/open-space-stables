@@ -36,7 +36,7 @@ const Hero = () => {
         <img 
           src={heroLogo} 
           alt="חוות המרחב הפתוח" 
-          className="w-32 md:w-40 mx-auto mb-6 animate-fade-in-up"
+          className="w-32 md:w-40 mx-auto mb-6 mt-8 animate-fade-in-up"
         />
         <h1 className="font-sans font-bold text-5xl md:text-7xl text-white mb-4 animate-fade-in-up"
             style={{ 
