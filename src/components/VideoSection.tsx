@@ -8,7 +8,7 @@ const VideoSection = () => {
               <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
                 <iframe
                   className="absolute top-0 left-0 w-full h-full rounded-3xl shadow-2xl"
-                  src="https://www.youtube.com/embed/6JDAtAd6myc"
+                  src="https://www.youtube.com/embed/6JDAtAd6myc?autoplay=1&mute=1&loop=1&playlist=6JDAtAd6myc&controls=0&modestbranding=1"
                   title="סרטון המרחב הפתוח"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
