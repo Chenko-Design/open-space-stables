@@ -128,12 +128,24 @@ const WhatWeOffer = () => {
       link: "#"
     },
     {
-      title: "קורס בנושא טראומה",
+      title: (
+        <>
+          קורס בנושא
+          <br />
+          טראומה
+        </>
+      ),
       icon: <img src={equalIcon} alt="קורס טראומה" className="w-16 h-16" />,
       link: "#"
     },
     {
-      title: "הכשרת קורס מדריכים",
+      title: (
+        <>
+          הכשרת קורס
+          <br />
+          מדריכים
+        </>
+      ),
       icon: <img src={drivingIcon} alt="הכשרת מדריכים" className="w-16 h-16" />,
       link: "#"
     }
