@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroVideo from "@/assets/hero-video.mp4";
+import heroTitle from "@/assets/hero-title.png";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -23,21 +24,11 @@ const Hero = () => {
       <div className="absolute bottom-32 right-20 w-32 h-32 rounded-full bg-accent/10 animate-float" style={{ animationDelay: '1s' }} />
       
       <div className="relative z-10 container mx-auto px-4 text-center">
-        <h1 className="font-display text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up text-white">
-          <span className="inline-block">
-            חוות סוסים טיפולית
-          </span>
-        </h1>
-        <p className="text-xl md:text-2xl mb-8 text-accent max-w-2xl mx-auto font-medium animate-fade-in-up" 
-           style={{ animationDelay: '0.2s' }}>
-          מקום של הכלה, הקשבה וקבלת השונה
-        </p>
-        <p className="text-lg md:text-xl mb-12 text-white/85 max-w-3xl mx-auto animate-fade-in-up"
-           style={{ animationDelay: '0.3s' }}>
-          עוזרים לילדים ונוער עם צרכים מיוחדים לגדול, להתפתח ולצמוח
-          <br />
-          תוך שילוב טבע, חיות ואווירה פסטורלית מכילה וקהילתית
-        </p>
+        <img 
+          src={heroTitle} 
+          alt="חוות סוסים טיפולית" 
+          className="w-full max-w-2xl mx-auto mb-12 animate-fade-in-up"
+        />
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up"
              style={{ animationDelay: '0.4s' }}>
           <button 
