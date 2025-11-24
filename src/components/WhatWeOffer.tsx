@@ -80,7 +80,13 @@ const WhatWeOffer = () => {
       link: "#"
     },
     {
-      title: 'טיפול באמצעות בעלי חיים',
+      title: (
+        <>
+          טיפול באמצעות
+          <br />
+          בעלי חיים
+        </>
+      ),
       icon: <img src={rabbitIcon} alt="טיפול בבעלי חיים" className="w-16 h-16" />,
       link: "#"
     },
