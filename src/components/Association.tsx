@@ -16,7 +16,8 @@ const Association = () => {
             </h2>
           </div>
           
-          <div className="space-y-6 text-lg md:text-xl text-foreground leading-relaxed text-right font-sans">
+          <div className="md:flex md:justify-center">
+            <div className="md:w-[800px] space-y-6 text-lg md:text-xl text-foreground leading-relaxed text-right font-sans">
             <p>
               <span className="font-bold text-primary">עמותת גאלו"פ – גשר לאהבה ולפתיחות</span> בשנת 2003 חברנו יחד, קבוצה של יוצאי יחידות מובחרות בצה"ל ובכירים במשק הישראלי, ונרתמנו לעשייה חברתית מיוחדת במינה:
             </p>
@@ -33,6 +34,7 @@ const Association = () => {
               "הרצון היה ליצור מקום של חיבור בין אנשים לבעלי חיים, מקום של שלווה וניתוק מהחיים התחרותיים, החומריים וההישגיים. זה מקום של שמחה ואהבה אבל של עבודה קשה ושאיפה להתקדמות, מקום שמגלה את הנשמה היתרה שבכל אחד מאיתנו, וזה היה הרעיון הבסיסי שעליו פועלת החווה עד היום."
               <span className="block mt-2 font-bold text-primary">ד"ר עופר קומרובסקי</span>
             </p>
+            </div>
           </div>
         </div>
       </div>
