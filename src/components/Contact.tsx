@@ -17,8 +17,8 @@ const Contact = () => {
             <div className="p-8 md:p-12">
               <div className="space-y-8 max-w-xl mx-auto">
                 <div className="group flex items-start gap-4 p-4 rounded-2xl hover:bg-primary/5 transition-all">
-                  <div className="w-14 h-14 bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform shadow-lg">
-                    <Phone className="w-7 h-7 text-primary" />
+                  <div className="bg-primary/10 hover:bg-primary/20 p-3 rounded-full flex-shrink-0 group-hover:scale-110 transition-all">
+                    <Phone className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-2 text-card-foreground">טלפון</h3>
@@ -29,8 +29,8 @@ const Contact = () => {
                 </div>
 
                 <div className="group flex items-start gap-4 p-4 rounded-2xl hover:bg-secondary/5 transition-all">
-                  <div className="w-14 h-14 bg-gradient-to-br from-secondary/20 to-secondary/5 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform shadow-lg">
-                    <Mail className="w-7 h-7 text-secondary" />
+                  <div className="bg-primary/10 hover:bg-primary/20 p-3 rounded-full flex-shrink-0 group-hover:scale-110 transition-all">
+                    <Mail className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-2 text-card-foreground">דוא"ל</h3>
@@ -41,8 +41,8 @@ const Contact = () => {
                 </div>
 
                 <div className="group flex items-start gap-4 p-4 rounded-2xl hover:bg-accent/5 transition-all">
-                  <div className="w-14 h-14 bg-gradient-to-br from-accent/20 to-accent/5 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform shadow-lg">
-                    <MapPin className="w-7 h-7 text-accent" />
+                  <div className="bg-primary/10 hover:bg-primary/20 p-3 rounded-full flex-shrink-0 group-hover:scale-110 transition-all">
+                    <MapPin className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-2 text-card-foreground">כתובת</h3>
