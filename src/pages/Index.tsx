@@ -7,6 +7,7 @@ import WhatWeOffer from "@/components/WhatWeOffer";
 import VideoSection from "@/components/VideoSection";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
       <VideoSection />
       <Contact />
       <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 };
