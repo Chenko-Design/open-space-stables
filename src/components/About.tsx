@@ -9,11 +9,11 @@ const About = () => {
             מי אנחנו
           </h2>
           <div className="md:flex md:items-stretch md:gap-10 lg:gap-12 md:justify-center">
-            <div className="order-last md:order-first md:w-[350px] md:flex-shrink-0 flex items-stretch">
+            <div className="group order-last md:order-first md:w-[350px] md:flex-shrink-0 flex items-stretch overflow-hidden rounded-3xl shadow-2xl">
               <img 
                 src={aboutImage} 
                 alt="ילד עם סוס בחווה" 
-                className="w-full md:h-full h-auto object-contain rounded-3xl shadow-2xl mx-auto"
+                className="w-full md:h-full h-auto object-contain mx-auto group-hover:scale-110 transition-transform duration-700"
               />
             </div>
             <div className="md:w-[450px] md:flex-shrink-0 flex items-stretch mt-8 md:mt-0 md:pt-3">
