@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="text-center mb-8">
             <p className="font-handwriting text-2xl md:text-3xl mb-2">המרחב הפתוח</p>
             <p className="text-primary-foreground/80 text-lg">
-              מקום של הכלה, הקשבה וצמיחה
+              עקבו אחרינו ברשתות
             </p>
           </div>
           
