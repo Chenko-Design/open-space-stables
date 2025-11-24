@@ -6,7 +6,7 @@ const About = () => {
           <h2 className="text-5xl md:text-6xl font-handwriting font-bold mb-12 text-primary">
             מי אנחנו
           </h2>
-          <div className="space-y-6 text-lg md:text-xl text-foreground leading-relaxed text-right">
+          <div className="space-y-6 text-lg md:text-xl text-foreground leading-relaxed text-right font-sans">
             <p>
               <span className="font-bold text-primary">המרחב הפתוח</span> היא לא רק חוות סוסים - זו דרך חיים. זו חווה קסומה בלב הטבע הפסטורלי של עמק איילון שמציעה מרחב ריפוי וטיפול שקט אך עשיר בגירויים, שבו מתפתחת מוטיבציה פנימית - לרכב, להתמודד, לצמוח.
             </p>
