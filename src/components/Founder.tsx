@@ -8,9 +8,9 @@ const Founder = () => {
           <h2 className="text-5xl md:text-6xl font-handwriting font-bold mb-12 text-primary text-center">
             ד״ר עופר קומרובסקי
           </h2>
-          <div className="md:flex md:items-start md:gap-10 lg:gap-12 mb-8">
-            <div className="md:flex-1 flex justify-end">
-              <div className="md:w-[450px] space-y-6 text-lg md:text-xl text-foreground leading-relaxed text-right font-sans mt-8 md:mt-0 md:pt-3">
+          <div className="md:flex md:items-start md:gap-10 lg:gap-12 md:justify-end mb-8">
+            <div className="md:w-[450px] md:flex-shrink-0 mt-8 md:mt-0 md:pt-3">
+              <div className="space-y-6 text-lg md:text-xl text-foreground leading-relaxed text-right font-sans">
                 <p>
                   המרחב הפתוח הוקם <span className="font-bold text-primary">בחזונו של עופר קומרובסקי</span> וממשיך לצמוח ולהתפתח בהובלתו. הקשר של עופר עם סוסים החל בילדותו במטעי השקדים של אביו בקיבוץ נגבה ולאחר מכן כנער גידל סוסים בשדות כפר אזר. לאחר שירותו הצבאי למד וטרינריה והתמחה ברפואת סוסים.
                 </p>
@@ -19,11 +19,11 @@ const Founder = () => {
                 </p>
               </div>
             </div>
-            <div className="md:w-[350px] md:flex-shrink-0 flex items-stretch">
+            <div className="md:w-[350px] md:flex-shrink-0">
               <img 
                 src={founderImage} 
                 alt="ד״ר עופר קומרובסקי" 
-                className="w-full md:h-full h-auto object-contain rounded-3xl shadow-2xl mx-auto"
+                className="w-full h-auto object-contain rounded-3xl shadow-2xl"
               />
             </div>
           </div>
