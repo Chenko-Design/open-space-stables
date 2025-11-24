@@ -45,10 +45,10 @@ const Hero = () => {
             }}>
           חוות המרחב הפתוח
         </h1>
-        <p className="font-handwriting font-bold text-3xl md:text-5xl text-primary mb-20 animate-fade-in-up" 
+        <p className="font-handwriting font-bold text-3xl md:text-5xl text-accent mb-20 animate-fade-in-up" 
            style={{ 
              animationDelay: '0.2s',
-             textShadow: '-2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white'
+             textShadow: '-2px -2px 0 hsl(var(--primary)), 2px -2px 0 hsl(var(--primary)), -2px 2px 0 hsl(var(--primary)), 2px 2px 0 hsl(var(--primary))'
            }}>
           להיות מרחב לכל אדם באשר הוא
         </p>
