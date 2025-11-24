@@ -3,12 +3,12 @@ import aboutImage from "@/assets/about-child-horse.jpg";
 const About = () => {
   return (
     <section id="about" className="py-24 bg-gradient-to-b from-background to-muted">
-      <div className="container mx-auto px-12 md:px-20 lg:px-28">
-        <div className="max-w-6xl mx-auto animate-fade-in-up">
+      <div className="container mx-auto px-8 sm:px-12 md:px-16 lg:px-20 xl:px-24 2xl:px-32">
+        <div className="max-w-7xl mx-auto animate-fade-in-up">
           <h2 className="text-5xl md:text-6xl font-handwriting font-bold mb-12 text-primary text-center">
             מי אנחנו
           </h2>
-          <div className="grid md:grid-cols-[38%_58%] gap-10">
+          <div className="grid md:grid-cols-[38%_58%] lg:grid-cols-[36%_60%] xl:grid-cols-[35%_61%] gap-8 md:gap-10 lg:gap-12">
             <div className="order-last md:order-first">
               <img 
                 src={aboutImage} 
@@ -16,7 +16,7 @@ const About = () => {
                 className="w-full h-auto rounded-3xl shadow-2xl"
               />
             </div>
-            <div className="space-y-6 text-lg md:text-xl text-foreground leading-relaxed text-right font-sans">
+            <div className="space-y-4 md:space-y-5 lg:space-y-6 text-base md:text-lg lg:text-xl text-foreground leading-relaxed text-right font-sans">
               <p>
                 <span className="font-bold text-primary">המרחב הפתוח</span> היא לא רק חוות סוסים - זו דרך חיים. זו חווה קסומה בלב הטבע הפסטורלי של עמק איילון שמציעה מרחב ריפוי וטיפול שקט אך עשיר בגירויים, שבו מתפתחת מוטיבציה פנימית - לרכב, להתמודד, לצמוח.
               </p>
