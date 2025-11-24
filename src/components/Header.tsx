@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 import {
   Sheet,
@@ -28,11 +29,12 @@ const Header = () => {
   };
 
   const menuItems = [
-    { id: "about", label: "מי אנחנו" },
-    { id: "founder", label: "דר' עופר קומרובסקי" },
-    { id: "association", label: "עמותת גלאופ" },
-    { id: "what-we-offer", label: "הפעילויות שלנו" },
-    { id: "contact", label: "צור קשר" },
+    { id: "about", label: "מי אנחנו", type: "scroll" as const },
+    { id: "founder", label: "דר' עופר קומרובסקי", type: "scroll" as const },
+    { id: "association", label: "עמותת גלאופ", type: "scroll" as const },
+    { id: "what-we-offer", label: "הפעילויות שלנו", type: "scroll" as const },
+    { id: "contact", label: "צור קשר", type: "scroll" as const },
+    { id: "accessibility", label: "הצהרת נגישות", type: "link" as const, path: "/accessibility" },
   ];
 
   return (
@@ -58,12 +60,22 @@ const Header = () => {
                 <ul className="space-y-4">
                   {menuItems.map((item) => (
                     <li key={item.id}>
-                      <button
-                        onClick={() => scrollToSection(item.id)}
-                        className="w-full text-right text-xl font-display text-foreground hover:text-accent transition-colors py-3 px-4 hover:bg-accent/10 rounded-lg"
-                      >
-                        {item.label}
-                      </button>
+                      {item.type === "link" ? (
+                        <Link
+                          to={item.path!}
+                          onClick={() => setIsOpen(false)}
+                          className="block w-full text-right text-xl font-display text-foreground hover:text-accent transition-colors py-3 px-4 hover:bg-accent/10 rounded-lg"
+                        >
+                          {item.label}
+                        </Link>
+                      ) : (
+                        <button
+                          onClick={() => scrollToSection(item.id)}
+                          className="w-full text-right text-xl font-display text-foreground hover:text-accent transition-colors py-3 px-4 hover:bg-accent/10 rounded-lg"
+                        >
+                          {item.label}
+                        </button>
+                      )}
                     </li>
                   ))}
                 </ul>
