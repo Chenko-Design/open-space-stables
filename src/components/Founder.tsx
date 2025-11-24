@@ -8,16 +8,9 @@ const Founder = () => {
           <h2 className="text-5xl md:text-6xl font-handwriting font-bold mb-12 text-primary text-center">
             ד״ר עופר קומרובסקי
           </h2>
-          <div className="md:flex md:items-start md:gap-10 lg:gap-12 md:justify-center mb-8">
-            <div className="md:w-[350px] md:flex-shrink-0 flex items-stretch order-2 md:order-2">
-              <img 
-                src={founderImage} 
-                alt="ד״ר עופר קומרובסקי" 
-                className="w-full md:h-full h-auto object-contain rounded-3xl shadow-2xl mx-auto"
-              />
-            </div>
-            <div className="md:w-[450px] md:flex-shrink-0 flex items-stretch mt-8 md:mt-0 md:pt-3 order-1 md:order-1">
-              <div className="space-y-6 text-lg md:text-xl text-foreground leading-relaxed text-right font-sans">
+          <div className="md:flex md:items-start md:gap-10 lg:gap-12 mb-8">
+            <div className="md:flex-1 flex justify-end">
+              <div className="md:w-[450px] space-y-6 text-lg md:text-xl text-foreground leading-relaxed text-right font-sans mt-8 md:mt-0 md:pt-3">
                 <p>
                   המרחב הפתוח הוקם <span className="font-bold text-primary">בחזונו של עופר קומרובסקי</span> וממשיך לצמוח ולהתפתח בהובלתו. הקשר של עופר עם סוסים החל בילדותו במטעי השקדים של אביו בקיבוץ נגבה ולאחר מכן כנער גידל סוסים בשדות כפר אזר. לאחר שירותו הצבאי למד וטרינריה והתמחה ברפואת סוסים.
                 </p>
@@ -25,6 +18,13 @@ const Founder = () => {
                   במהלך הטיפולים בסוסים, נחשף עופר לקסם של הרכיבה טיפולית ובשנת 1998 הקים את המרחב הפתוח. בהמשך, בעזרת חברים ייסד את <span className="font-bold text-primary">עמותת גלאופ</span> - גשר לאהבה ופתיחות. המרחב הפתוח הוקמה על מנת להנגיש לאוכלוסיות מיוחדות בעיקר ילדים את הקשר המעצים עם סוסים ושאר בעלי חיים.
                 </p>
               </div>
+            </div>
+            <div className="md:w-[350px] md:flex-shrink-0 flex items-stretch">
+              <img 
+                src={founderImage} 
+                alt="ד״ר עופר קומרובסקי" 
+                className="w-full md:h-full h-auto object-contain rounded-3xl shadow-2xl mx-auto"
+              />
             </div>
           </div>
           
