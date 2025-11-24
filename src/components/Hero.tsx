@@ -37,6 +37,9 @@ const Hero = () => {
           src={heroTitle} 
           alt="חוות סוסים טיפולית" 
           className="w-full max-w-md mx-auto mb-3 animate-fade-in-up"
+          style={{
+            filter: 'drop-shadow(-2px -2px 0 hsl(var(--primary))) drop-shadow(2px -2px 0 hsl(var(--primary))) drop-shadow(-2px 2px 0 hsl(var(--primary))) drop-shadow(2px 2px 0 hsl(var(--primary)))'
+          }}
         />
         <p className="font-handwriting font-bold text-3xl md:text-5xl text-secondary mb-20 animate-fade-in-up" 
            style={{ 
