@@ -91,8 +91,8 @@ const WhatWeOffer = () => {
       link: "#"
     },
     {
-      title: "נוער בסיכון",
-      icon: <img src={teamIcon} alt="נוער בסיכון" className="w-16 h-16" />,
+      title: "רכיבה ספורטיבית מתקדמת",
+      icon: <img src={horseRidingIcon} alt="רכיבה ספורטיבית" className="w-16 h-16" />,
       link: "#"
     },
     // שורה 3 - הפוך
@@ -107,8 +107,8 @@ const WhatWeOffer = () => {
       link: "#"
     },
     {
-      title: "רכיבה ספורטיבית מתקדמת",
-      icon: <img src={horseRidingIcon} alt="רכיבה ספורטיבית" className="w-16 h-16" />,
+      title: "נוער בסיכון",
+      icon: <img src={teamIcon} alt="נוער בסיכון" className="w-16 h-16" />,
       link: "#"
     },
     {
