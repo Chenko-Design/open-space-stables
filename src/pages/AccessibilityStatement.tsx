@@ -64,7 +64,7 @@ const AccessibilityStatement = () => {
               </h2>
               <div className="space-y-2">
                 <p>
-                  <strong>רכז נגישות:</strong> דר' עופר קומרובסקי
+                  <strong>רכז נגישות:</strong> עופר קומרובסקי
                 </p>
                 <p>
                   <strong>טלפון:</strong> <a href="tel:058-6085521" className="text-accent hover:underline">058-6085521</a>
