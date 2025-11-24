@@ -28,13 +28,15 @@ const Founder = () => {
             </div>
           </div>
           
-          <div className="max-w-7xl mx-auto space-y-6 text-lg md:text-xl text-foreground leading-relaxed text-right font-sans">
-            <p>
-              המפגש המקרי בחווה עם ילדים על הספקטרום, הציף אותו בתחושת סקרנות ויצירתיות מצד אחד ובתחושת שליחות מצד שני. בהשראתם, נסחף עופר במסירות לעולם של צרכים מיוחדים והחזון התפתח ל<span className="font-bold text-primary">שיטת המרחב הפתוח</span>.
-            </p>
-            <p>
-              <span className="font-bold text-primary">גישה טיפולית פורצת דרך</span> שיש לה חלק בהובלת השינוי בגישה להתמודדות ושילוב בקהילה. דרך שיש בה הגשמה למרות ועם המגבלה. עופר ממשיך כל הזמן להיות מונע בתחושת שליחות, לפרוץ עוד גבולות לקדם ולהפיץ את הרעיון.
-            </p>
+          <div className="md:flex md:justify-center">
+            <div className="md:w-[450px] md:flex-shrink-0 space-y-6 text-lg md:text-xl text-foreground leading-relaxed text-right font-sans">
+              <p>
+                המפגש המקרי בחווה עם ילדים על הספקטרום, הציף אותו בתחושת סקרנות ויצירתיות מצד אחד ובתחושת שליחות מצד שני. בהשראתם, נסחף עופר במסירות לעולם של צרכים מיוחדים והחזון התפתח ל<span className="font-bold text-primary">שיטת המרחב הפתוח</span>.
+              </p>
+              <p>
+                <span className="font-bold text-primary">גישה טיפולית פורצת דרך</span> שיש לה חלק בהובלת השינוי בגישה להתמודדות ושילוב בקהילה. דרך שיש בה הגשמה למרות ועם המגבלה. עופר ממשיך כל הזמן להיות מונע בתחושת שליחות, לפרוץ עוד גבולות לקדם ולהפיץ את הרעיון.
+              </p>
+            </div>
           </div>
         </div>
       </div>
