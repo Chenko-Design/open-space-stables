@@ -14,7 +14,7 @@ const Footer = () => {
           
           <div className="flex justify-center items-center gap-6 mb-8">
             <a
-              href="https://facebook.com/yourpage"
+              href="https://www.facebook.com/openspacehorses"
               target="_blank"
               rel="noopener noreferrer"
               className="group bg-primary-foreground/10 hover:bg-primary-foreground/20 p-3 rounded-full transition-all hover:scale-110"
