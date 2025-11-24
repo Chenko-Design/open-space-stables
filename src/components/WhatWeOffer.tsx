@@ -164,7 +164,7 @@ const WhatWeOffer = () => {
               <a
                 key={index}
                 href={service.link}
-                className="group bg-background/80 backdrop-blur-sm rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col items-center justify-center text-center gap-4 border border-border/50"
+                className="group bg-background/80 backdrop-blur-sm rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col items-center justify-center text-center gap-4 border border-border/50 h-[180px]"
               >
                 <div className="text-primary transition-transform duration-300 group-hover:scale-110">
                   {service.icon}
