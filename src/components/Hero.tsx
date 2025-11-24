@@ -41,7 +41,7 @@ const Hero = () => {
         <p className="font-handwriting font-bold text-3xl md:text-5xl text-primary mb-20 animate-fade-in-up" 
            style={{ 
              animationDelay: '0.2s',
-             textShadow: '-2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff, -3px 0 0 #fff, 3px 0 0 #fff, 0 -3px 0 #fff, 0 3px 0 #fff'
+             textShadow: '-2px -2px 0 hsl(45 93% 47%), 2px -2px 0 hsl(45 93% 47%), -2px 2px 0 hsl(45 93% 47%), 2px 2px 0 hsl(45 93% 47%), -3px 0 0 hsl(45 93% 47%), 3px 0 0 hsl(45 93% 47%), 0 -3px 0 hsl(45 93% 47%), 0 3px 0 hsl(45 93% 47%)'
            }}>
           להיות מרחב לכל אדם באשר הוא
         </p>
