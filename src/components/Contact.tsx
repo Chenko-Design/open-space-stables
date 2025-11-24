@@ -82,12 +82,6 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-
-              <div className="mt-12 pt-8 border-t border-border text-center">
-                <p className="text-muted-foreground text-sm md:text-base">
-                  🕐 שעות פעילות: ימים א'-ה' 09:00-18:00 | יום ו' ומוצ"ש לפי תיאום
-                </p>
-              </div>
             </div>
           </div>
         </div>
