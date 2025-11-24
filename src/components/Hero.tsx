@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroVideo from "@/assets/hero-video.mp4";
-import heroTitle from "@/assets/hero-title.png";
+import heroLogo from "@/assets/logo-new.png";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -34,17 +34,10 @@ const Hero = () => {
       
       <div className="relative z-10 container mx-auto px-4 text-center">
         <img 
-          src={heroTitle} 
-          alt="חוות סוסים טיפולית" 
-          className="w-full max-w-md mx-auto mb-3 animate-fade-in-up"
+          src={heroLogo} 
+          alt="חוות המרחב הפתוח" 
+          className="w-full max-w-sm mx-auto mb-8 animate-fade-in-up"
         />
-        <h1 className="font-sans font-bold text-4xl md:text-6xl text-white mb-4 animate-fade-in-up"
-            style={{ 
-              animationDelay: '0.1s',
-              textShadow: '-1px -1px 0 hsl(var(--primary)), 1px -1px 0 hsl(var(--primary)), -1px 1px 0 hsl(var(--primary)), 1px 1px 0 hsl(var(--primary))'
-            }}>
-          חוות המרחב הפתוח
-        </h1>
         <p className="font-handwriting font-bold text-3xl md:text-5xl text-secondary mb-20 animate-fade-in-up"
            style={{ 
              animationDelay: '0.2s',
