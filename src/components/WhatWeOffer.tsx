@@ -16,7 +16,7 @@ import teamIcon from "@/assets/icons/team.png";
 import shockedIcon from "@/assets/icons/shocked.png";
 
 interface ServiceCard {
-  title: string;
+  title: string | React.ReactNode;
   icon: React.ReactNode;
   link: string;
 }
@@ -30,7 +30,13 @@ const WhatWeOffer = () => {
       link: "#"
     },
     {
-      title: "מרכז יום לבוגרים",
+      title: (
+        <>
+          מרכז יום לבוגרים
+          <br />
+          על הספקטרום
+        </>
+      ),
       icon: <img src={sunIcon} alt="מרכז יום" className="w-16 h-16" />,
       link: "#"
     },
