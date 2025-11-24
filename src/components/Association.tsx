@@ -2,18 +2,18 @@ import galopLogo from "@/assets/galop-logo.png";
 
 const Association = () => {
   return (
-    <section id="association" className="py-24 bg-muted">
+    <section id="association" className="py-24 bg-white">
       <div className="container mx-auto px-8 sm:px-12 md:px-16 lg:px-[128px] xl:px-[192px] 2xl:px-[256px]">
         <div className="max-w-7xl mx-auto animate-fade-in-up">
           <h2 className="text-5xl md:text-6xl font-handwriting font-bold mb-12 text-primary text-center">
             עמותת גאלו"פ
           </h2>
           <div className="md:flex md:items-start md:gap-10 lg:gap-12 md:justify-center">
-            <div className="md:w-[350px] md:flex-shrink-0 flex items-start">
+            <div className="md:w-[250px] md:flex-shrink-0 flex items-start">
               <img 
                 src={galopLogo} 
                 alt="לוגו עמותת גאלופ" 
-                className="w-full h-auto object-contain mx-auto"
+                className="w-[200px] md:w-full h-auto object-contain mx-auto"
               />
             </div>
             <div className="md:w-[450px] md:flex-shrink-0 flex items-stretch mt-8 md:mt-0">
