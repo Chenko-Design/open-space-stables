@@ -16,7 +16,7 @@ const Contact = () => {
           <div className="glass-card shadow-2xl border-2 border-border/50 rounded-3xl overflow-hidden">
             <div className="p-8 md:p-12">
               <div className="space-y-8 max-w-xl mx-auto">
-                <div className="group flex items-start gap-4 p-4 rounded-2xl hover:bg-primary/5 transition-all">
+                <div className="group flex items-start gap-4 p-4 rounded-2xl hover:bg-secondary/5 transition-all">
                   <div className="bg-primary/10 hover:bg-primary/20 p-3 rounded-full flex-shrink-0 group-hover:scale-110 transition-all">
                     <Phone className="w-6 h-6 text-primary" />
                   </div>
@@ -40,7 +40,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="group flex items-start gap-4 p-4 rounded-2xl hover:bg-accent/5 transition-all">
+                <div className="group flex items-start gap-4 p-4 rounded-2xl hover:bg-secondary/5 transition-all">
                   <div className="bg-primary/10 hover:bg-primary/20 p-3 rounded-full flex-shrink-0 group-hover:scale-110 transition-all">
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
