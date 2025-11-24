@@ -8,27 +8,29 @@ const About = () => {
           <h2 className="text-5xl md:text-6xl font-handwriting font-bold mb-12 text-primary text-center">
             מי אנחנו
           </h2>
-          <div className="grid md:grid-cols-[38%_58%] lg:grid-cols-[36%_60%] xl:grid-cols-[35%_61%] gap-8 md:gap-10 lg:gap-12">
-            <div className="order-last md:order-first">
+          <div className="md:flex md:items-stretch md:gap-10 lg:gap-12">
+            <div className="order-last md:order-first md:w-2/5 flex">
               <img 
                 src={aboutImage} 
                 alt="ילד עם סוס בחווה" 
-                className="w-full h-auto rounded-3xl shadow-2xl"
+                className="w-full h-full md:max-h-[480px] object-cover rounded-3xl shadow-2xl mx-auto"
               />
             </div>
-            <div className="space-y-4 md:space-y-5 lg:space-y-6 text-base md:text-lg lg:text-xl text-foreground leading-relaxed text-right font-sans">
-              <p>
-                <span className="font-bold text-primary">המרחב הפתוח</span> היא לא רק חוות סוסים - זו דרך חיים. זו חווה קסומה בלב הטבע הפסטורלי של עמק איילון שמציעה מרחב ריפוי וטיפול שקט אך עשיר בגירויים, שבו מתפתחת מוטיבציה פנימית - לרכב, להתמודד, לצמוח.
-              </p>
-              <p>
-                זהו מקום של <span className="font-bold text-primary">עשיה אמיצה עם אהבה ושמחה</span> - מקום שמזמין התמודדות עם פחדים ושדים והופך אותם לאתגרים. ביחד, מתוך חופש, כבוד, חיבור עמוק והקשבה לסביבה ולעצמנו.
-              </p>
-              <p>
-                כאן תפגשו <span className="font-bold text-primary">צוות מקצועי ואנושי</span>, סוסים וחיות אחרות אבל מעל הכל תרגישו את <span className="font-bold text-primary">הרעיון</span> של המקום, קבלה והכלה, יחס אישי ואכפתי לקצב ולמהות של כל ילד אדם ובעל חיים.
-              </p>
-              <p>
-                המרחב הפתוח הוא <span className="font-bold text-primary">בית ומשפחה</span> שבו כל אחד ואחת יכול למצוא מקום לנשום, להכיר ולאהוב את הערך שלו - לקחת את המושכות לידיים ולרכב קדימה.
-              </p>
+            <div className="md:w-3/5 flex items-stretch mt-8 md:mt-0">
+              <div className="space-y-4 md:space-y-5 lg:space-y-6 text-base md:text-lg lg:text-xl text-foreground leading-relaxed text-right font-sans flex flex-col justify-between">
+                <p>
+                  <span className="font-bold text-primary">המרחב הפתוח</span> היא לא רק חוות סוסים - זו דרך חיים. זו חווה קסומה בלב הטבע הפסטורלי של עמק איילון שמציעה מרחב ריפוי וטיפול שקט אך עשיר בגירויים, שבו מתפתחת מוטיבציה פנימית - לרכב, להתמודד, לצמוח.
+                </p>
+                <p>
+                  זהו מקום של <span className="font-bold text-primary">עשיה אמיצה עם אהבה ושמחה</span> - מקום שמזמין התמודדות עם פחדים ושדים והופך אותם לאתגרים. ביחד, מתוך חופש, כבוד, חיבור עמוק והקשבה לסביבה ולעצמנו.
+                </p>
+                <p>
+                  כאן תפגשו <span className="font-bold text-primary">צוות מקצועי ואנושי</span>, סוסים וחיות אחרות אבל מעל הכל תרגישו את <span className="font-bold text-primary">הרעיון</span> של המקום, קבלה והכלה, יחס אישי ואכפתי לקצב ולמהות של כל ילד אדם ובעל חיים.
+                </p>
+                <p>
+                  המרחב הפתוח הוא <span className="font-bold text-primary">בית ומשפחה</span> שבו כל אחד ואחת יכול למצוא מקום לנשום, להכיר ולאהוב את הערך שלו - לקחת את המושכות לידיים ולרכב קדימה.
+                </p>
+              </div>
             </div>
           </div>
         </div>
