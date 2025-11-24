@@ -39,7 +39,10 @@ const Hero = () => {
           className="w-full max-w-md mx-auto mb-3 animate-fade-in-up"
         />
         <p className="font-handwriting font-bold text-3xl md:text-5xl text-primary mb-20 animate-fade-in-up" 
-           style={{ animationDelay: '0.2s' }}>
+           style={{ 
+             animationDelay: '0.2s',
+             textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, -3px 0 0 #000, 3px 0 0 #000, 0 -3px 0 #000, 0 3px 0 #000'
+           }}>
           להיות מרחב לכל אדם באשר הוא
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up"
