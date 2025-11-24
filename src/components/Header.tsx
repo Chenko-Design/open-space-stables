@@ -63,7 +63,7 @@ const Header = () => {
           <img 
             src={logo} 
             alt="המרחב הפתוח - לוגו החווה" 
-            className="h-20 md:h-24 w-auto mx-auto"
+            className="h-18 md:h-22 w-auto mx-auto"
           />
 
           <div className="w-12" />
