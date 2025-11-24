@@ -53,13 +53,13 @@ const Hero = () => {
              style={{ animationDelay: '0.4s' }}>
           <button 
             onClick={() => scrollToSection('contact')}
-            className="group px-6 sm:px-8 py-4 bg-accent text-primary font-display text-lg rounded-xl hover-lift hover:shadow-[0_0_30px_rgba(232,181,77,0.4)] transition-all duration-300 hover:scale-105 max-w-[280px] sm:max-w-none mx-auto sm:mx-0"
+            className="group w-full sm:w-auto px-6 sm:px-8 py-4 bg-accent text-primary font-display text-lg rounded-xl hover-lift hover:shadow-[0_0_30px_rgba(232,181,77,0.4)] transition-all duration-300 hover:scale-105"
           >
             צרו קשר
           </button>
           <button 
             onClick={() => scrollToSection('what-we-offer')}
-            className="group px-6 sm:px-8 py-4 bg-white/10 text-white backdrop-blur-sm border-2 border-accent/50 font-display text-lg rounded-xl hover-lift hover:bg-accent hover:text-primary hover:border-accent transition-all duration-300 hover:scale-105 max-w-[280px] sm:max-w-none mx-auto sm:mx-0"
+            className="group w-full sm:w-auto px-6 sm:px-8 py-4 bg-white/10 text-white backdrop-blur-sm border-2 border-accent/50 font-display text-lg rounded-xl hover-lift hover:bg-accent hover:text-primary hover:border-accent transition-all duration-300 hover:scale-105"
           >
             הפעילויות שלנו
           </button>
