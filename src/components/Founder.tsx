@@ -1,10 +1,13 @@
 import founderImage from "@/assets/ofer-komrovsky.jpg";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const Founder = () => {
+  const { ref, isVisible } = useScrollReveal();
+  
   return (
-    <section id="founder" className="py-24 bg-gradient-to-b from-muted to-background">
+    <section ref={ref} id="founder" className="py-24 bg-gradient-to-b from-muted to-background">
       <div className="container mx-auto px-8 sm:px-12 md:px-16 lg:px-[128px] xl:px-[192px] 2xl:px-[256px]">
-        <div className="max-w-7xl mx-auto animate-fade-in-up">
+        <div className={`max-w-7xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}>
           <h2 className="text-5xl md:text-6xl font-handwriting font-bold mb-12 text-primary text-center">
             ד״ר עופר קומרובסקי
           </h2>

@@ -14,6 +14,7 @@ import friendlyIcon from "@/assets/icons/friendly.png";
 import drivingIcon from "@/assets/icons/driving.png";
 import teamIcon from "@/assets/icons/team.png";
 import shockedIcon from "@/assets/icons/shocked.png";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 interface ServiceCard {
   title: string | React.ReactNode;
@@ -21,6 +22,8 @@ interface ServiceCard {
 }
 
 const WhatWeOffer = () => {
+  const { ref, isVisible } = useScrollReveal();
+  
   const services: ServiceCard[] = [
     // שורה 1
     {
@@ -135,9 +138,9 @@ const WhatWeOffer = () => {
   ];
 
   return (
-    <section id="what-we-offer" className="py-24 bg-gradient-to-b from-background to-muted">
+    <section ref={ref} id="what-we-offer" className="py-24 bg-gradient-to-b from-background to-muted">
       <div className="container mx-auto px-8 sm:px-12 md:px-16 lg:px-[128px] xl:px-[192px] 2xl:px-[256px]">
-        <div className="animate-fade-in-up">
+        <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}>
           <h2 className="text-5xl md:text-6xl font-handwriting font-bold mb-4 text-primary text-center">
             מה תמצאו אצלנו
           </h2>
