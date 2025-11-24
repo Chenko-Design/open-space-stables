@@ -45,7 +45,7 @@ const Hero = () => {
             }}>
           חוות המרחב הפתוח
         </h1>
-        <p className="font-handwriting font-bold text-3xl md:text-5xl text-accent mb-20 animate-fade-in-up" 
+        <p className="font-handwriting font-bold text-2xl md:text-4xl text-accent mb-20 animate-fade-in-up" 
            style={{ 
              animationDelay: '0.2s',
              textShadow: '-2px -2px 0 hsl(var(--primary)), 2px -2px 0 hsl(var(--primary)), -2px 2px 0 hsl(var(--primary)), 2px 2px 0 hsl(var(--primary))'
