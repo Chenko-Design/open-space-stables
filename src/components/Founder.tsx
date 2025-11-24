@@ -13,7 +13,7 @@ const Founder = () => {
               <img 
                 src={founderImage} 
                 alt="ד״ר עופר קומרובסקי" 
-                className="w-full md:h-full h-auto object-cover rounded-3xl shadow-2xl mx-auto"
+                className="w-full md:h-full h-auto object-contain rounded-3xl shadow-2xl mx-auto"
               />
             </div>
             <div className="md:w-[450px] md:flex-shrink-0 flex items-stretch mt-8 md:mt-0 md:pt-3">
