@@ -51,6 +51,18 @@ const Header = () => {
     }
   };
 
+  const handleLogoClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (location.pathname !== "/") {
+      navigate("/");
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+  };
+
   const menuItems = [
     { id: "about", label: "מי אנחנו", type: "scroll" as const },
     { id: "founder", label: "דר' עופר קומרובסקי", type: "scroll" as const },
@@ -107,7 +119,7 @@ const Header = () => {
             </SheetContent>
           </Sheet>
 
-          <Link to="/" className="mx-auto">
+          <Link to="/" onClick={handleLogoClick} className="mx-auto">
             <img 
               src={logo} 
               alt="המרחב הפתוח - לוגו החווה" 
