@@ -16,7 +16,7 @@ export default {
       fontFamily: {
         sans: ['Assistant', 'system-ui', 'sans-serif'],
         display: ['Varela Round', 'Assistant', 'sans-serif'],
-        handwriting: ['Gveret Levin AlefAlefAlef', 'Amatic SC', 'cursive'],
+        handwriting: ['Amatic SC', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",
