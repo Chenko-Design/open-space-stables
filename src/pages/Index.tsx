@@ -5,7 +5,6 @@ import Founder from "@/components/Founder";
 import Association from "@/components/Association";
 import WhatWeOffer from "@/components/WhatWeOffer";
 import VideoSection from "@/components/VideoSection";
-import Programs from "@/components/Programs";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -19,7 +18,6 @@ const Index = () => {
       <Association />
       <WhatWeOffer />
       <VideoSection />
-      <Programs />
       <Contact />
       <Footer />
     </div>
