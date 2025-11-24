@@ -41,7 +41,13 @@ const WhatWeOffer = () => {
       link: "#"
     },
     {
-      title: 'תוכנית "קהילה בצמיחה"',
+      title: (
+        <>
+          תוכנית
+          <br />
+          "קהילה בצמיחה"
+        </>
+      ),
       icon: <img src={plantIcon} alt="קהילה בצמיחה" className="w-16 h-16" />,
       link: "#"
     },
