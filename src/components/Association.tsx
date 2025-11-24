@@ -16,7 +16,7 @@ const Association = () => {
                 </p>
               </div>
             </div>
-            <div className="md:w-[250px] md:flex-shrink-0 flex items-start order-1 md:order-2">
+            <div className="md:w-[350px] md:flex-shrink-0 flex items-start order-1 md:order-2">
               <img 
                 src={galopLogo} 
                 alt="לוגו עמותת גאלופ" 
