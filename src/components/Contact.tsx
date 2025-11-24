@@ -26,8 +26,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-bold text-lg mb-2 text-card-foreground">טלפון</h3>
-                      <a href="tel:050-1234567" className="text-muted-foreground hover:text-primary transition-colors text-lg font-medium">
-                        050-1234567
+                      <a href="tel:058-6085521" className="text-muted-foreground hover:text-primary transition-colors text-lg font-medium">
+                        058-6085521
                       </a>
                     </div>
                   </div>
@@ -38,8 +38,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-bold text-lg mb-2 text-card-foreground">דוא"ל</h3>
-                      <a href="mailto:info@horsefarm.co.il" className="text-muted-foreground hover:text-primary transition-colors break-all">
-                        info@horsefarm.co.il
+                      <a href="mailto:office@open-space.co.il" className="text-muted-foreground hover:text-primary transition-colors break-all">
+                        office@open-space.co.il
                       </a>
                     </div>
                   </div>
@@ -51,9 +51,9 @@ const Contact = () => {
                     <div>
                       <h3 className="font-bold text-lg mb-2 text-card-foreground">כתובת</h3>
                       <p className="text-muted-foreground leading-relaxed">
-                        החווה ממוקמת באזור מרכזי ונגיש
+                        חוות המרחב הפתוח
                         <br />
-                        נשמח לארח אתכם לביקור
+                        התירוש 13, כפר שמואל
                       </p>
                     </div>
                   </div>
@@ -74,7 +74,7 @@ const Contact = () => {
                     <Button 
                       size="lg"
                       className="bg-primary hover:bg-primary/90 text-primary-foreground w-full rounded-full shadow-lg hover:shadow-[0_10px_40px_hsl(142_55%_45%_/_0.3)] hover:scale-105 transition-all text-lg py-6"
-                      onClick={() => window.location.href = 'tel:050-1234567'}
+                      onClick={() => window.location.href = 'tel:058-6085521'}
                     >
                       <Phone className="ml-2 h-5 w-5" />
                       התקשרו עכשיו
