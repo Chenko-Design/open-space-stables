@@ -27,8 +27,12 @@ const Hero = () => {
         <img 
           src={heroTitle} 
           alt="חוות סוסים טיפולית" 
-          className="w-full max-w-md mx-auto mb-12 animate-fade-in-up"
+          className="w-full max-w-md mx-auto mb-6 animate-fade-in-up"
         />
+        <p className="font-handwriting text-2xl md:text-3xl text-primary mb-12 animate-fade-in-up" 
+           style={{ animationDelay: '0.2s' }}>
+          להיות מרחב לכל אדם באשר הוא
+        </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up"
              style={{ animationDelay: '0.4s' }}>
           <button 
