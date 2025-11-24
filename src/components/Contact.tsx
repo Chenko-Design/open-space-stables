@@ -7,7 +7,7 @@ const Contact = () => {
     <section id="contact" className="py-24 bg-gradient-to-b from-muted to-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 text-primary">
+          <h2 className="text-5xl md:text-6xl font-handwriting font-bold mb-6 text-primary">
             צרו קשר
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
