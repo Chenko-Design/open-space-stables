@@ -67,7 +67,7 @@ const AccessibilityStatement = () => {
                   <strong>רכז נגישות:</strong> דר' עופר קומרובסקי
                 </p>
                 <p>
-                  <strong>טלפון:</strong> <a href="tel:052-8362513" className="text-accent hover:underline">052-8362513</a>
+                  <strong>טלפון:</strong> <a href="tel:058-6085521" className="text-accent hover:underline">058-6085521</a>
                 </p>
                 <p>
                   <strong>דוא"ל:</strong> <a href="mailto:office@open-space.co.il" className="text-accent hover:underline">office@open-space.co.il</a>
