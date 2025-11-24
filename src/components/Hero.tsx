@@ -5,7 +5,16 @@ import heroTitle from "@/assets/hero-title.png";
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: "smooth" });
+    if (element) {
+      const headerOffset = 100;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
   };
 
   return (
@@ -36,7 +45,7 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up"
              style={{ animationDelay: '0.4s' }}>
           <button 
-            onClick={() => scrollToSection('programs')}
+            onClick={() => scrollToSection('what-we-offer')}
             className="group px-8 py-4 bg-accent text-primary font-display text-lg rounded-xl hover-lift hover:shadow-[0_0_30px_rgba(232,181,77,0.4)] transition-all duration-300 hover:scale-105"
           >
             הפעילויות שלנו
