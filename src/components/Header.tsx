@@ -19,7 +19,7 @@ const Header = () => {
   };
 
   const menuItems = [
-    { id: "programs", label: "הפעילויות שלנו" },
+    { id: "what-we-offer", label: "הפעילויות שלנו" },
     { id: "about", label: "אודות" },
     { id: "contact", label: "צור קשר" },
   ];
