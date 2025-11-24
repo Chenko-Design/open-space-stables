@@ -3,12 +3,12 @@ import aboutImage from "@/assets/about-child-horse.jpg";
 const About = () => {
   return (
     <section id="about" className="py-24 bg-gradient-to-b from-background to-muted">
-      <div className="container mx-auto px-4">
-        <div className="max-w-5xl mx-auto animate-fade-in-up">
+      <div className="container mx-auto px-8 md:px-16 lg:px-24">
+        <div className="max-w-6xl mx-auto animate-fade-in-up">
           <h2 className="text-5xl md:text-6xl font-handwriting font-bold mb-12 text-primary text-center">
             מי אנחנו
           </h2>
-          <div className="grid md:grid-cols-[45%_50%] gap-8 md:gap-12 lg:gap-16">
+          <div className="grid md:grid-cols-[52%_43%] gap-8 md:gap-12">
             <div className="order-last md:order-first">
               <img 
                 src={aboutImage} 
