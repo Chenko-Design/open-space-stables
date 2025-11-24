@@ -24,13 +24,8 @@ interface ServiceCard {
 const WhatWeOffer = () => {
   const services: ServiceCard[] = [
     {
-      title: 'תוכנית "חמכניה"',
-      icon: <img src={livingTogetherIcon} alt="חמכניה" className="w-16 h-16" />,
-      link: "#"
-    },
-    {
-      title: 'תוכנית "קהילה בצמיחה"',
-      icon: <img src={plantIcon} alt="קהילה בצמיחה" className="w-16 h-16" />,
+      title: "רכיבה טיפולית",
+      icon: <img src={therapyHorseIcon} alt="רכיבה טיפולית" className="w-16 h-16" />,
       link: "#"
     },
     {
@@ -39,8 +34,13 @@ const WhatWeOffer = () => {
       link: "#"
     },
     {
-      title: "רכיבה טיפולית",
-      icon: <img src={therapyHorseIcon} alt="רכיבה טיפולית" className="w-16 h-16" />,
+      title: 'תוכנית "קהילה בצמיחה"',
+      icon: <img src={plantIcon} alt="קהילה בצמיחה" className="w-16 h-16" />,
+      link: "#"
+    },
+    {
+      title: 'תוכנית "חמכניה"',
+      icon: <img src={livingTogetherIcon} alt="חמכניה" className="w-16 h-16" />,
       link: "#"
     },
     {
