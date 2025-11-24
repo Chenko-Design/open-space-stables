@@ -42,7 +42,7 @@ const Hero = () => {
             }}>
           חוות המרחב הפתוח
         </h1>
-        <p className="font-handwriting font-bold text-3xl md:text-5xl text-accent mb-40 md:mb-32 animate-fade-in-up tracking-wide" 
+        <p className="font-handwriting font-bold text-3xl md:text-5xl text-accent mb-48 md:mb-40 animate-fade-in-up tracking-wide" 
            style={{ 
              animationDelay: '0.2s',
              textShadow: '-3px -3px 0 hsl(var(--primary)), 3px -3px 0 hsl(var(--primary)), -3px 3px 0 hsl(var(--primary)), 3px 3px 0 hsl(var(--primary)), -3px 0 0 hsl(var(--primary)), 3px 0 0 hsl(var(--primary)), 0 -3px 0 hsl(var(--primary)), 0 3px 0 hsl(var(--primary))'
