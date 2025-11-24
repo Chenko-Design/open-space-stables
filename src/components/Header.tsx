@@ -84,11 +84,13 @@ const Header = () => {
             </SheetContent>
           </Sheet>
 
-          <img 
-            src={logo} 
-            alt="המרחב הפתוח - לוגו החווה" 
-            className="h-20 md:h-24 w-auto mx-auto"
-          />
+          <Link to="/" className="mx-auto">
+            <img 
+              src={logo} 
+              alt="המרחב הפתוח - לוגו החווה" 
+              className="h-20 md:h-24 w-auto hover:opacity-80 transition-opacity cursor-pointer"
+            />
+          </Link>
 
           <div className="w-12" />
         </div>
