@@ -3,7 +3,7 @@ import aboutImage from "@/assets/about-child-horse.jpg";
 const About = () => {
   return (
     <section id="about" className="py-24 bg-gradient-to-b from-background to-muted">
-      <div className="container mx-auto px-8 sm:px-12 md:px-16 lg:px-24 xl:px-32 2xl:px-40">
+      <div className="container mx-auto px-8 sm:px-12 md:px-16 lg:px-32 xl:px-48 2xl:px-64">
         <div className="max-w-7xl mx-auto animate-fade-in-up">
           <h2 className="text-5xl md:text-6xl font-handwriting font-bold mb-12 text-primary text-center">
             מי אנחנו
