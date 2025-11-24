@@ -6,15 +6,14 @@ const Contact = () => {
   return (
     <section id="contact" className="py-24 bg-gradient-to-b from-muted to-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-5xl md:text-6xl font-handwriting font-bold text-primary">
-            צרו קשר
-          </h2>
-        </div>
-
         <div className="max-w-4xl mx-auto">
           <div className="glass-card shadow-2xl border-2 border-border/50 rounded-3xl overflow-hidden">
             <div className="p-8 md:p-12">
+              <div className="text-center mb-12 animate-fade-in-up">
+                <h2 className="text-5xl md:text-6xl font-handwriting font-bold text-primary">
+                  צרו קשר
+                </h2>
+              </div>
               <div className="space-y-8 max-w-xl mx-auto">
                 <div className="group flex items-start gap-4 p-4 rounded-2xl hover:bg-secondary/5 transition-all">
                   <div className="bg-primary/10 hover:bg-primary/20 p-3 rounded-full flex-shrink-0 group-hover:scale-110 transition-all">
