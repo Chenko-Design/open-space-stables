@@ -16,11 +16,11 @@ const Association = () => {
                 </p>
               </div>
             </div>
-            <div className="md:w-[350px] md:flex-shrink-0 flex items-start order-1 md:order-2">
+            <div className="md:w-[180px] md:flex-shrink-0 flex items-start order-1 md:order-2">
               <img 
                 src={galopLogo} 
                 alt="לוגו עמותת גאלופ" 
-                className="w-[200px] md:w-full h-auto object-contain mx-auto"
+                className="w-[150px] md:w-[160px] h-auto object-contain mx-auto"
               />
             </div>
           </div>
