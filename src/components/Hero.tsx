@@ -36,7 +36,7 @@ const Hero = () => {
         <img 
           src={heroTitle} 
           alt="חוות סוסים טיפולית" 
-          className="w-full max-w-xs mx-auto mb-3 animate-fade-in-up"
+          className="w-full max-w-md mx-auto mb-3 animate-fade-in-up"
         />
         <p className="font-handwriting font-bold text-3xl md:text-5xl text-primary mb-20 animate-fade-in-up" 
            style={{ animationDelay: '0.2s' }}>
@@ -45,16 +45,16 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up"
              style={{ animationDelay: '0.4s' }}>
           <button 
-            onClick={() => scrollToSection('contact')}
+            onClick={() => scrollToSection('what-we-offer')}
             className="group px-8 py-4 bg-accent text-primary font-display text-lg rounded-xl hover-lift hover:shadow-[0_0_30px_rgba(232,181,77,0.4)] transition-all duration-300 hover:scale-105"
           >
-            צרו קשר
+            הפעילויות שלנו
           </button>
           <button 
-            onClick={() => scrollToSection('what-we-offer')}
+            onClick={() => scrollToSection('contact')}
             className="group px-8 py-4 bg-white/10 text-white backdrop-blur-sm border-2 border-accent/50 font-display text-lg rounded-xl hover-lift hover:bg-accent hover:text-primary hover:border-accent transition-all duration-300 hover:scale-105"
           >
-            הפעילויות שלנו
+            צרו קשר
           </button>
         </div>
       </div>
