@@ -23,6 +23,7 @@ interface ServiceCard {
 
 const WhatWeOffer = () => {
   const services: ServiceCard[] = [
+    // שורה 1
     {
       title: "רכיבה טיפולית",
       icon: <img src={therapyHorseIcon} alt="רכיבה טיפולית" className="w-16 h-16" />,
@@ -43,14 +44,10 @@ const WhatWeOffer = () => {
       icon: <img src={livingTogetherIcon} alt="חמכניה" className="w-16 h-16" />,
       link: "#"
     },
+    // שורה 2 - הפוך
     {
-      title: "כלבנות טיפולית",
-      icon: <img src={dogIcon} alt="כלבנות טיפולית" className="w-16 h-16" />,
-      link: "#"
-    },
-    {
-      title: 'טיפול באמצעות בעלי חיים',
-      icon: <img src={rabbitIcon} alt="טיפול בבעלי חיים" className="w-16 h-16" />,
+      title: "שירות לאומי מיוחד",
+      icon: <img src={heartHandIcon} alt="שירות לאומי" className="w-16 h-16" />,
       link: "#"
     },
     {
@@ -59,13 +56,19 @@ const WhatWeOffer = () => {
       link: "#"
     },
     {
-      title: "שירות לאומי מיוחד",
-      icon: <img src={heartHandIcon} alt="שירות לאומי" className="w-16 h-16" />,
+      title: 'טיפול באמצעות בעלי חיים',
+      icon: <img src={rabbitIcon} alt="טיפול בבעלי חיים" className="w-16 h-16" />,
       link: "#"
     },
     {
-      title: "רכיבה ספורטיבית מתקדמת",
-      icon: <img src={horseRidingIcon} alt="רכיבה ספורטיבית" className="w-16 h-16" />,
+      title: "כלבנות טיפולית",
+      icon: <img src={dogIcon} alt="כלבנות טיפולית" className="w-16 h-16" />,
+      link: "#"
+    },
+    // שורה 3 - הפוך
+    {
+      title: "PTSD",
+      icon: <img src={shockedIcon} alt="PTSD" className="w-16 h-16" />,
       link: "#"
     },
     {
@@ -74,8 +77,8 @@ const WhatWeOffer = () => {
       link: "#"
     },
     {
-      title: "PTSD",
-      icon: <img src={shockedIcon} alt="PTSD" className="w-16 h-16" />,
+      title: "רכיבה ספורטיבית מתקדמת",
+      icon: <img src={horseRidingIcon} alt="רכיבה ספורטיבית" className="w-16 h-16" />,
       link: "#"
     },
     {
@@ -83,14 +86,10 @@ const WhatWeOffer = () => {
       icon: <img src={buddyIcon} alt="נוער בסיכון" className="w-16 h-16" />,
       link: "#"
     },
+    // שורה 4 - הפוך
     {
-      title: "הכשרת קורס מדריכים",
-      icon: <img src={drivingIcon} alt="הכשרת מדריכים" className="w-16 h-16" />,
-      link: "#"
-    },
-    {
-      title: "קורס בנושא טראומה",
-      icon: <img src={equalIcon} alt="קורס טראומה" className="w-16 h-16" />,
+      title: '"הרוכב הצעיר"',
+      icon: <img src={teamIcon} alt="הרוכב הצעיר" className="w-16 h-16" />,
       link: "#"
     },
     {
@@ -99,8 +98,13 @@ const WhatWeOffer = () => {
       link: "#"
     },
     {
-      title: '"הרוכב הצעיר"',
-      icon: <img src={teamIcon} alt="הרוכב הצעיר" className="w-16 h-16" />,
+      title: "קורס בנושא טראומה",
+      icon: <img src={equalIcon} alt="קורס טראומה" className="w-16 h-16" />,
+      link: "#"
+    },
+    {
+      title: "הכשרת קורס מדריכים",
+      icon: <img src={drivingIcon} alt="הכשרת מדריכים" className="w-16 h-16" />,
       link: "#"
     }
   ];
