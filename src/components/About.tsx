@@ -13,7 +13,7 @@ const About = () => {
               <img 
                 src={aboutImage} 
                 alt="ילד עם סוס בחווה" 
-                className="w-full h-full md:max-h-[420px] object-cover rounded-3xl shadow-2xl mx-auto"
+                className="w-full h-auto object-contain rounded-3xl shadow-2xl mx-auto"
               />
             </div>
             <div className="md:w-[520px] md:flex-shrink-0 flex items-stretch mt-8 md:mt-0">
