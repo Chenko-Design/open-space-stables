@@ -16,7 +16,7 @@ const About = () => {
                 className="w-full md:h-full h-auto object-contain rounded-3xl shadow-2xl mx-auto"
               />
             </div>
-            <div className="md:w-[450px] md:flex-shrink-0 flex items-stretch mt-8 md:mt-0">
+            <div className="md:w-[450px] md:flex-shrink-0 flex items-stretch mt-8 md:mt-0 md:pt-8">
               <div className="space-y-6 text-lg md:text-xl text-foreground leading-relaxed text-right font-sans">
                 <p>
                   <span className="font-bold text-primary">המרחב הפתוח</span> היא לא רק חוות סוסים - זו דרך חיים. זו חווה קסומה בלב הטבע הפסטורלי של עמק איילון שמציעה מרחב ריפוי וטיפול שקט אך עשיר בגירויים, שבו מתפתחת מוטיבציה פנימית - לרכב, להתמודד, לצמוח.
