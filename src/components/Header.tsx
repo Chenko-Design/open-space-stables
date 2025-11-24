@@ -19,8 +19,10 @@ const Header = () => {
   };
 
   const menuItems = [
-    { id: "what-we-offer", label: "הפעילויות שלנו" },
-    { id: "about", label: "אודות" },
+    { id: "about", label: "מי אנחנו" },
+    { id: "founder", label: "המייסד" },
+    { id: "association", label: "עמותת גלאופ" },
+    { id: "what-we-offer", label: "מה תמצאו אצלנו" },
     { id: "contact", label: "צור קשר" },
   ];
 
