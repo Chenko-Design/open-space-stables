@@ -1,4 +1,3 @@
-import { School, Sprout, Users, GraduationCap, ShieldAlert, HeartHandshake, Package } from "lucide-react";
 import sportRidingIcon from "@/assets/icons/sport-riding.png";
 import horseRidingIcon from "@/assets/icons/horse-riding.png";
 import heartHandIcon from "@/assets/icons/heart-hand.png";
@@ -7,6 +6,14 @@ import rabbitIcon from "@/assets/icons/rabbit.png";
 import dogIcon from "@/assets/icons/dog.png";
 import therapyHorseIcon from "@/assets/icons/therapy-horse.png";
 import sunIcon from "@/assets/icons/sun.png";
+import livingTogetherIcon from "@/assets/icons/living-together.png";
+import plantIcon from "@/assets/icons/plant.png";
+import buddyIcon from "@/assets/icons/buddy.png";
+import equalIcon from "@/assets/icons/equal.png";
+import friendlyIcon from "@/assets/icons/friendly.png";
+import drivingIcon from "@/assets/icons/driving.png";
+import teamIcon from "@/assets/icons/team.png";
+import shockedIcon from "@/assets/icons/shocked.png";
 
 interface ServiceCard {
   title: string;
@@ -18,12 +25,12 @@ const WhatWeOffer = () => {
   const services: ServiceCard[] = [
     {
       title: 'תוכנית "חמכניה"',
-      icon: <School className="w-16 h-16" />,
+      icon: <img src={livingTogetherIcon} alt="חמכניה" className="w-16 h-16" />,
       link: "#"
     },
     {
       title: 'תוכנית "קהילה בצמיחה"',
-      icon: <img src={sunIcon} alt="קהילה בצמיחה" className="w-16 h-16" />,
+      icon: <img src={plantIcon} alt="קהילה בצמיחה" className="w-16 h-16" />,
       link: "#"
     },
     {
@@ -68,32 +75,32 @@ const WhatWeOffer = () => {
     },
     {
       title: "PTSD",
-      icon: <ShieldAlert className="w-16 h-16" />,
+      icon: <img src={shockedIcon} alt="PTSD" className="w-16 h-16" />,
       link: "#"
     },
     {
       title: "נוער בסיכון",
-      icon: <HeartHandshake className="w-16 h-16" />,
+      icon: <img src={buddyIcon} alt="נוער בסיכון" className="w-16 h-16" />,
       link: "#"
     },
     {
       title: "הכשרת קורס מדריכים",
-      icon: <GraduationCap className="w-16 h-16" />,
+      icon: <img src={drivingIcon} alt="הכשרת מדריכים" className="w-16 h-16" />,
       link: "#"
     },
     {
       title: "קורס בנושא טראומה",
-      icon: <Package className="w-16 h-16" />,
+      icon: <img src={equalIcon} alt="קורס טראומה" className="w-16 h-16" />,
       link: "#"
     },
     {
       title: "קורסי הכשרה למדריכים ומטפלים",
-      icon: <Users className="w-16 h-16" />,
+      icon: <img src={friendlyIcon} alt="קורסי הכשרה" className="w-16 h-16" />,
       link: "#"
     },
     {
       title: '"הרוכב הצעיר"',
-      icon: <Sprout className="w-16 h-16" />,
+      icon: <img src={teamIcon} alt="הרוכב הצעיר" className="w-16 h-16" />,
       link: "#"
     }
   ];
