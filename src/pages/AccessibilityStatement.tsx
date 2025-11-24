@@ -70,7 +70,7 @@ const AccessibilityStatement = () => {
                   <strong>טלפון:</strong> <a href="tel:052-8362513" className="text-accent hover:underline">052-8362513</a>
                 </p>
                 <p>
-                  <strong>דוא"ל:</strong> <a href="mailto:info@hamerhav-haptuah.org.il" className="text-accent hover:underline">info@hamerhav-haptuah.org.il</a>
+                  <strong>דוא"ל:</strong> <a href="mailto:office@open-space.co.il" className="text-accent hover:underline">office@open-space.co.il</a>
                 </p>
               </div>
             </section>
