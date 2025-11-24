@@ -69,7 +69,13 @@ const WhatWeOffer = () => {
       link: "#"
     },
     {
-      title: "קהומונה - שנת שירות בחווה",
+      title: (
+        <>
+          קומונה - שנת
+          <br />
+          שירות בחווה
+        </>
+      ),
       icon: <img src={volunteeringIcon} alt="קהומונה" className="w-16 h-16" />,
       link: "#"
     },
