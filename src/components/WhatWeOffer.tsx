@@ -92,7 +92,7 @@ const WhatWeOffer = () => {
     },
     {
       title: "נוער בסיכון",
-      icon: <img src={buddyIcon} alt="נוער בסיכון" className="w-16 h-16" />,
+      icon: <img src={teamIcon} alt="נוער בסיכון" className="w-16 h-16" />,
       link: "#"
     },
     // שורה 3 - הפוך
@@ -119,7 +119,7 @@ const WhatWeOffer = () => {
     // שורה 4 - הפוך
     {
       title: '"הרוכב הצעיר"',
-      icon: <img src={teamIcon} alt="הרוכב הצעיר" className="w-16 h-16" />,
+      icon: <img src={buddyIcon} alt="הרוכב הצעיר" className="w-16 h-16" />,
       link: "#"
     },
     {
