@@ -3,17 +3,17 @@ import aboutImage from "@/assets/about-child-horse.jpg";
 const About = () => {
   return (
     <section id="about" className="py-24 bg-gradient-to-b from-background to-muted">
-      <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto animate-fade-in-up">
+      <div className="container mx-auto px-8">
+        <div className="max-w-7xl mx-auto animate-fade-in-up">
           <h2 className="text-5xl md:text-6xl font-handwriting font-bold mb-12 text-primary text-center">
             מי אנחנו
           </h2>
-          <div className="grid md:grid-cols-[35%_65%] gap-12 items-stretch">
-            <div className="order-last md:order-first flex items-center">
+          <div className="grid md:grid-cols-[40%_60%] gap-12">
+            <div className="order-last md:order-first">
               <img 
                 src={aboutImage} 
                 alt="ילד עם סוס בחווה" 
-                className="w-full h-full object-cover rounded-3xl shadow-2xl"
+                className="w-full h-auto rounded-3xl shadow-2xl"
               />
             </div>
             <div className="space-y-6 text-lg md:text-xl text-foreground leading-relaxed text-right font-sans">
