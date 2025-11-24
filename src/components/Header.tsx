@@ -20,7 +20,7 @@ const Header = () => {
 
   const menuItems = [
     { id: "about", label: "מי אנחנו" },
-    { id: "founder", label: "המייסד" },
+    { id: "founder", label: "דר' עופר קומרובסקי" },
     { id: "association", label: "עמותת גלאופ" },
     { id: "what-we-offer", label: "מה תמצאו אצלנו" },
     { id: "contact", label: "צור קשר" },
