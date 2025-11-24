@@ -6,14 +6,14 @@ const Association = () => {
       <div className="container mx-auto px-8 sm:px-12 md:px-16 lg:px-[128px] xl:px-[192px] 2xl:px-[256px]">
         <div className="max-w-7xl mx-auto animate-fade-in-up">
           <div className="flex items-center justify-center gap-8 mb-12">
-            <h2 className="text-5xl md:text-6xl font-handwriting font-bold text-primary text-center">
-              עמותת גאלו"פ
-            </h2>
             <img 
               src={galopLogo} 
               alt="לוגו עמותת גאלופ" 
               className="w-[150px] md:w-[160px] h-auto object-contain"
             />
+            <h2 className="text-5xl md:text-6xl font-handwriting font-bold text-primary text-center">
+              עמותת גאלו"פ
+            </h2>
           </div>
           <div className="md:flex md:items-start md:gap-10 lg:gap-12 md:justify-center mb-8">
             <div className="md:w-[450px] md:flex-shrink-0 flex items-stretch">
