@@ -35,6 +35,7 @@ const Header = () => {
     { id: "what-we-offer", label: "הפעילויות שלנו", type: "scroll" as const },
     { id: "contact", label: "צור קשר", type: "scroll" as const },
     { id: "accessibility", label: "הצהרת נגישות", type: "link" as const, path: "/accessibility" },
+    { id: "privacy", label: "מדיניות פרטיות", type: "link" as const, path: "/privacy" },
   ];
 
   return (
