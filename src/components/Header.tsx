@@ -22,7 +22,7 @@ const Header = () => {
     { id: "about", label: "מי אנחנו" },
     { id: "founder", label: "דר' עופר קומרובסקי" },
     { id: "association", label: "עמותת גלאופ" },
-    { id: "what-we-offer", label: "מה תמצאו אצלנו" },
+    { id: "what-we-offer", label: "הפעילויות שלנו" },
     { id: "contact", label: "צור קשר" },
   ];
 
