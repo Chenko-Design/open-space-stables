@@ -28,7 +28,7 @@ const Founder = () => {
             </div>
           </div>
           
-          <div className="space-y-6 text-lg md:text-xl text-foreground leading-relaxed text-right font-sans">
+          <div className="max-w-7xl mx-auto space-y-6 text-lg md:text-xl text-foreground leading-relaxed text-right font-sans">
             <p>
               המפגש המקרי בחווה עם ילדים על הספקטרום, הציף אותו בתחושת סקרנות ויצירתיות מצד אחד ובתחושת שליחות מצד שני. בהשראתם, נסחף עופר במסירות לעולם של צרכים מיוחדים והחזון התפתח ל<span className="font-bold text-primary">שיטת המרחב הפתוח</span>.
             </p>
