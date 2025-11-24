@@ -14,7 +14,7 @@ const Contact = () => {
                   צרו קשר
                 </h2>
               </div>
-              <div className="space-y-8 max-w-xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                 <div className="group flex items-start gap-4 p-4 rounded-2xl hover:bg-secondary/5 transition-all">
                   <div className="bg-primary/10 hover:bg-primary/20 p-3 rounded-full flex-shrink-0 group-hover:scale-110 transition-all">
                     <Phone className="w-6 h-6 text-primary" />
@@ -71,29 +71,29 @@ const Contact = () => {
                     </p>
                   </div>
                 </div>
+              </div>
 
-                <div className="pt-4 border-t border-border">
-                  <h3 className="font-bold text-lg mb-4 text-card-foreground text-center">עקבו אחרינו ברשתות</h3>
-                  <div className="flex justify-center gap-4">
-                    <a
-                      href="https://www.facebook.com/openspacehorses"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group bg-primary/10 hover:bg-primary/20 p-3 rounded-full transition-all hover:scale-110"
-                      aria-label="Facebook"
-                    >
-                      <Facebook className="w-6 h-6 text-primary" />
-                    </a>
-                    <a
-                      href="https://www.instagram.com/openspacestables/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group bg-primary/10 hover:bg-primary/20 p-3 rounded-full transition-all hover:scale-110"
-                      aria-label="Instagram"
-                    >
-                      <Instagram className="w-6 h-6 text-primary" />
-                    </a>
-                  </div>
+              <div className="pt-8 border-t border-border mt-8">
+                <h3 className="font-bold text-lg mb-4 text-card-foreground text-center">עקבו אחרינו ברשתות</h3>
+                <div className="flex justify-center gap-4">
+                  <a
+                    href="https://www.facebook.com/openspacehorses"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group bg-primary/10 hover:bg-primary/20 p-3 rounded-full transition-all hover:scale-110"
+                    aria-label="Facebook"
+                  >
+                    <Facebook className="w-6 h-6 text-primary" />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/openspacestables/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group bg-primary/10 hover:bg-primary/20 p-3 rounded-full transition-all hover:scale-110"
+                    aria-label="Instagram"
+                  >
+                    <Instagram className="w-6 h-6 text-primary" />
+                  </a>
                 </div>
               </div>
             </div>
