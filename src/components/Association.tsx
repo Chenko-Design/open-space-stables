@@ -15,17 +15,11 @@ const Association = () => {
               עמותת גאלו"פ
             </h2>
           </div>
-          <div className="md:flex md:items-start md:gap-10 lg:gap-12 md:justify-center mb-8">
-            <div className="md:w-[450px] md:flex-shrink-0 flex items-stretch">
-              <div className="text-lg md:text-xl text-foreground leading-relaxed text-right font-sans">
-                <p>
-                  <span className="font-bold text-primary">עמותת גאלו"פ – גשר לאהבה ולפתיחות</span> בשנת 2003 חברנו יחד, קבוצה של יוצאי יחידות מובחרות בצה"ל ובכירים במשק הישראלי, ונרתמנו לעשייה חברתית מיוחדת במינה:
-                </p>
-              </div>
-            </div>
-          </div>
           
           <div className="space-y-6 text-lg md:text-xl text-foreground leading-relaxed text-right font-sans">
+            <p>
+              <span className="font-bold text-primary">עמותת גאלו"פ – גשר לאהבה ולפתיחות</span> בשנת 2003 חברנו יחד, קבוצה של יוצאי יחידות מובחרות בצה"ל ובכירים במשק הישראלי, ונרתמנו לעשייה חברתית מיוחדת במינה:
+            </p>
             <p>
               שיקומם וקידומם של ילדים ובוגרים המתקשים להשתלב בזרם המרכזי והמהיר של החברה, בשאיפה לחולל שינוי משמעותי בחייהם, למנף את יכולותיהם ולסייע להם ברכישת מיומנויות לקיום אורח חיים עצמאי ותורם בחברה.
             </p>
