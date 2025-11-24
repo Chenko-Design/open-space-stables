@@ -52,7 +52,13 @@ const WhatWeOffer = () => {
       link: "#"
     },
     {
-      title: 'תוכנית "חמכניה"',
+      title: (
+        <>
+          תוכנית
+          <br />
+          "המכינה"
+        </>
+      ),
       icon: <img src={livingTogetherIcon} alt="חמכניה" className="w-16 h-16" />,
       link: "#"
     },
