@@ -23,7 +23,7 @@ const Footer = () => {
               <Facebook className="w-6 h-6" />
             </a>
             <a
-              href="https://instagram.com/yourpage"
+              href="https://www.instagram.com/openspacestables/"
               target="_blank"
               rel="noopener noreferrer"
               className="group bg-primary-foreground/10 hover:bg-primary-foreground/20 p-3 rounded-full transition-all hover:scale-110"
