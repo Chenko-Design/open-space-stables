@@ -8,15 +8,15 @@ const About = () => {
           <h2 className="text-5xl md:text-6xl font-handwriting font-bold mb-12 text-primary text-center">
             מי אנחנו
           </h2>
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            <div className="order-last md:order-first">
+          <div className="grid md:grid-cols-2 gap-12 items-stretch">
+            <div className="order-last md:order-first flex items-center">
               <img 
                 src={aboutImage} 
                 alt="ילד עם סוס בחווה" 
-                className="w-full h-auto rounded-3xl shadow-2xl sticky top-24"
+                className="w-full h-full object-cover rounded-3xl shadow-2xl"
               />
             </div>
-            <div className="space-y-6 text-lg md:text-xl text-foreground leading-relaxed text-right font-sans">
+            <div className="flex flex-col justify-between space-y-6 text-lg md:text-xl text-foreground leading-relaxed text-right font-sans">
               <p>
                 <span className="font-bold text-primary">המרחב הפתוח</span> היא לא רק חוות סוסים - זו דרך חיים. זו חווה קסומה בלב הטבע הפסטורלי של עמק איילון שמציעה מרחב ריפוי וטיפול שקט אך עשיר בגירויים, שבו מתפתחת מוטיבציה פנימית - לרכב, להתמודד, לצמוח.
               </p>
