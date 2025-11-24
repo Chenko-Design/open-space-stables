@@ -108,7 +108,7 @@ const WhatWeOffer = () => {
   return (
     <section id="what-we-offer" className="py-24 bg-gradient-to-b from-background to-muted">
       <div className="container mx-auto px-8 sm:px-12 md:px-16 lg:px-[128px] xl:px-[192px] 2xl:px-[256px]">
-        <div className="max-w-7xl mx-auto animate-fade-in-up">
+        <div className="animate-fade-in-up">
           <h2 className="text-5xl md:text-6xl font-handwriting font-bold mb-4 text-primary text-center">
             מה תמצאו אצלנו
           </h2>
