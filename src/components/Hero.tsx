@@ -29,9 +29,6 @@ const Hero = () => {
         <source src={heroVideo} type="video/mp4" />
       </video>
       
-      <div className="absolute top-32 left-10 w-20 h-20 rounded-full bg-accent/10 animate-float" />
-      <div className="absolute bottom-32 right-20 w-32 h-32 rounded-full bg-accent/10 animate-float" style={{ animationDelay: '1s' }} />
-      
       <div className="relative z-10 container mx-auto px-4 text-center">
         <img 
           src={heroLogo} 
