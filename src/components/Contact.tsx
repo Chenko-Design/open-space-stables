@@ -56,7 +56,12 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="group flex items-start gap-4 p-4 rounded-2xl hover:bg-secondary/5 transition-all">
+                <a 
+                  href="https://maps.google.com/?q=התירוש+13,+כפר+שמואל"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-start gap-4 p-4 rounded-2xl hover:bg-secondary/5 transition-all"
+                >
                   <div className="bg-secondary p-3 rounded-full flex-shrink-0 group-hover:scale-110 transition-all">
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
@@ -68,7 +73,7 @@ const Contact = () => {
                       התירוש 13, כפר שמואל
                     </p>
                   </div>
-                </div>
+                </a>
               </div>
 
               <div className="pt-8 border-t border-border mt-8">
