@@ -67,6 +67,7 @@ const Header = () => {
     { id: "about", label: "מי אנחנו", type: "scroll" as const },
     { id: "founder", label: "דר' עופר קומרובסקי", type: "scroll" as const },
     { id: "association", label: "עמותת גלאופ", type: "scroll" as const },
+    { id: "open-space-method", label: "שיטת המרחב הפתוח", type: "scroll" as const },
     { id: "what-we-offer", label: "הפעילויות שלנו", type: "scroll" as const },
     { id: "contact", label: "צור קשר", type: "scroll" as const },
     { id: "accessibility", label: "הצהרת נגישות", type: "link" as const, path: "/accessibility" },
