@@ -64,7 +64,7 @@ const OpenSpaceMethod = () => {
                     }`}
                     style={{ transitionDelay: `${delay}ms` }}
                   >
-                    <div className="relative bg-card border-2 border-primary/30 hover:border-primary/60 rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                    <div className="relative bg-background/80 backdrop-blur-sm border border-border/50 rounded-2xl p-6 md:p-8 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                       {/* Number badge - centered on right border */}
                       <div className="absolute top-1/2 -right-6 transform -translate-y-1/2 flex-shrink-0 z-10">
                         <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-primary shadow-lg flex items-center justify-center ring-4 ring-background">
