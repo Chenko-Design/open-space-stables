@@ -45,13 +45,13 @@ const OpenSpaceMethod = () => {
             שיטת המרחב הפתוח
           </h2>
           
-          <div className="max-w-6xl mx-auto">
+          <div className="mx-auto">
             <p className="text-lg md:text-xl text-foreground leading-relaxed text-center mb-16 font-sans">
               שיטת המרחב הפתוח היא גישה טיפולית־קהילתית ייחודית, המשלבת עבודה עם בעלי חיים, אחריות אישית ומעגלי שייכות. השיטה פועלת בכמה עקרונות מרכזיים:
             </p>
             
             {/* Full-width cards */}
-            <div className="space-y-6 md:space-y-8">
+            <div className="space-y-6 md:space-y-8 grid grid-cols-1">
               {principles.map((principle, index) => {
                 const Icon = principle.icon;
                 const delay = index * 100;
