@@ -65,14 +65,14 @@ const OpenSpaceMethod = () => {
                     style={{ transitionDelay: `${delay}ms` }}
                   >
                     <div className="relative bg-card border-2 border-primary/30 hover:border-primary/60 rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
-                      <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-                        {/* Number badge - positioned for mobile and desktop */}
-                        <div className="absolute -top-4 -right-4 md:relative md:top-0 md:right-0 flex-shrink-0">
-                          <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-primary shadow-lg flex items-center justify-center">
-                            <span className="text-2xl md:text-3xl font-bold text-primary-foreground">{principle.number}</span>
-                          </div>
+                      {/* Number badge - centered on right border */}
+                      <div className="absolute top-1/2 -right-6 transform -translate-y-1/2 flex-shrink-0 z-10">
+                        <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-primary shadow-lg flex items-center justify-center ring-4 ring-background">
+                          <span className="text-xl md:text-2xl font-bold text-primary-foreground">{principle.number}</span>
                         </div>
-                        
+                      </div>
+                      
+                      <div className="flex flex-col md:flex-row items-start md:items-center gap-6 pr-4">
                         {/* Icon */}
                         <div className="flex-shrink-0 mx-auto md:mx-0">
                           <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-secondary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
