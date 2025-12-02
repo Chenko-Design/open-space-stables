@@ -76,7 +76,7 @@ const OpenSpaceMethod = () => {
                         {/* Icon */}
                         <div className="flex-shrink-0 mx-auto md:mx-0">
                           <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-secondary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                            <Icon className="w-10 h-10 md:w-12 md:h-12 text-secondary" strokeWidth={2.5} />
+                            <Icon className="w-10 h-10 md:w-12 md:h-12 text-secondary" strokeWidth={1.5} />
                           </div>
                         </div>
                         
