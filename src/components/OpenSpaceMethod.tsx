@@ -45,58 +45,50 @@ const OpenSpaceMethod = () => {
             שיטת המרחב הפתוח
           </h2>
           
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <p className="text-lg md:text-xl text-foreground leading-relaxed text-center mb-16 font-sans">
               שיטת המרחב הפתוח היא גישה טיפולית־קהילתית ייחודית, המשלבת עבודה עם בעלי חיים, אחריות אישית ומעגלי שייכות. השיטה פועלת בכמה עקרונות מרכזיים:
             </p>
             
-            <div className="relative">
-              {/* Timeline line */}
-              <div className="absolute right-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary/40 via-primary to-primary/40 transform translate-x-1/2 hidden md:block" />
-              
-              {/* Timeline items */}
-              <div className="space-y-12 md:space-y-16">
-                {principles.map((principle, index) => {
-                  const Icon = principle.icon;
-                  const delay = index * 150;
-                  
-                  return (
-                    <div
-                      key={principle.number}
-                      className={`relative transition-all duration-1000 ${
-                        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-                      }`}
-                      style={{ transitionDelay: `${delay}ms` }}
-                    >
-                      {/* Timeline circle */}
-                      <div className="flex justify-center md:justify-start md:absolute md:right-1/2 md:transform md:translate-x-1/2 md:-translate-y-1 mb-4 md:mb-0">
-                        <div className="relative">
-                          <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center shadow-lg ring-4 ring-background">
-                            <Icon className="w-8 h-8 text-primary-foreground" />
-                          </div>
-                          <div className="absolute -top-2 -left-2 w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center text-xs font-bold text-primary">
-                            {principle.number}
-                          </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+              {principles.map((principle, index) => {
+                const Icon = principle.icon;
+                const delay = index * 100;
+                
+                return (
+                  <div
+                    key={principle.number}
+                    className={`group transition-all duration-1000 ${
+                      isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                    }`}
+                    style={{ transitionDelay: `${delay}ms` }}
+                  >
+                    <div className="relative h-full bg-card border-2 border-primary/30 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:border-primary/60 hover:-translate-y-2 transition-all duration-300">
+                      {/* Number badge */}
+                      <div className="absolute -top-4 -right-4 w-12 h-12 rounded-full bg-primary shadow-lg flex items-center justify-center">
+                        <span className="text-2xl font-bold text-primary-foreground">{principle.number}</span>
+                      </div>
+                      
+                      {/* Icon */}
+                      <div className="flex justify-center mb-6">
+                        <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                          <Icon className="w-10 h-10 text-primary" strokeWidth={2.5} />
                         </div>
                       </div>
                       
+                      {/* Title */}
+                      <h3 className="text-xl md:text-2xl font-bold text-primary mb-4 text-center leading-tight">
+                        {principle.title}
+                      </h3>
+                      
                       {/* Content */}
-                      <div className={`md:w-[calc(50%-3rem)] ${
-                        index % 2 === 0 ? 'md:mr-auto md:pr-12' : 'md:ml-auto md:pl-12'
-                      }`}>
-                        <div className="bg-card border-2 border-primary/20 rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                          <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4 text-right">
-                            {principle.title}
-                          </h3>
-                          <p className="text-base md:text-lg text-foreground/90 leading-relaxed text-right font-sans">
-                            {principle.content}
-                          </p>
-                        </div>
-                      </div>
+                      <p className="text-base text-foreground/90 leading-relaxed text-right font-sans">
+                        {principle.content}
+                      </p>
                     </div>
-                  );
-                })}
-              </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
