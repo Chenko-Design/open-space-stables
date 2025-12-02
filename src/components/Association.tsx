@@ -8,9 +8,9 @@ const Association = () => {
   return <section ref={ref} id="association" className="py-24 bg-white">
       <div className="container mx-auto px-8 sm:px-12 md:px-16 lg:px-[128px] xl:px-[192px] 2xl:px-[256px]">
         <div className={`max-w-7xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}>
-          <div className="flex items-center justify-center gap-8 mb-12">
-            <img src={galopLogo} alt="לוגו עמותת גאלופ" className="w-[150px] md:w-[160px] h-auto object-contain" />
-            <h2 className="text-5xl md:text-6xl font-handwriting font-bold text-primary text-center">עמותת גאלו"פ - גשר לאהבה ופתיחות</h2>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mb-12">
+            <img src={galopLogo} alt="לוגו עמותת גאלופ" className="w-[120px] md:w-[160px] h-auto object-contain" />
+            <h2 className="text-4xl md:text-6xl font-handwriting font-bold text-primary text-center">עמותת גאלו"פ - גשר לאהבה ופתיחות</h2>
           </div>
           
           <div className="md:flex md:justify-center">
