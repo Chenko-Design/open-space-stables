@@ -55,7 +55,6 @@ const OpenSpaceMethod = () => {
               {principles.slice(0, 3).map((principle, index) => {
                 const Icon = principle.icon;
                 const delay = index * 100;
-                const isEven = index % 2 === 0;
                 
                 return (
                   <div
@@ -65,31 +64,21 @@ const OpenSpaceMethod = () => {
                     }`}
                     style={{ transitionDelay: `${delay}ms` }}
                   >
-                    <div className={`relative h-full bg-card border-2 ${
-                      isEven ? 'border-primary/30 hover:border-primary/60' : 'border-secondary/30 hover:border-secondary/60'
-                    } rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300`}>
+                    <div className="relative h-full min-h-[400px] bg-card border-2 border-primary/30 hover:border-primary/60 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
                       {/* Number badge */}
-                      <div className={`absolute -top-4 -right-4 w-12 h-12 rounded-full ${
-                        isEven ? 'bg-primary' : 'bg-secondary'
-                      } shadow-lg flex items-center justify-center`}>
+                      <div className="absolute -top-4 -right-4 w-12 h-12 rounded-full bg-primary shadow-lg flex items-center justify-center">
                         <span className="text-2xl font-bold text-primary-foreground">{principle.number}</span>
                       </div>
                       
                       {/* Icon */}
                       <div className="flex justify-center mb-6">
-                        <div className={`w-20 h-20 rounded-full ${
-                          isEven ? 'bg-primary/10' : 'bg-secondary/10'
-                        } flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                          <Icon className={`w-10 h-10 ${
-                            isEven ? 'text-primary' : 'text-secondary'
-                          }`} strokeWidth={2.5} />
+                        <div className="w-20 h-20 rounded-full bg-secondary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                          <Icon className="w-10 h-10 text-secondary" strokeWidth={2.5} />
                         </div>
                       </div>
                       
                       {/* Title */}
-                      <h3 className={`text-xl md:text-2xl font-bold ${
-                        isEven ? 'text-primary' : 'text-secondary'
-                      } mb-4 text-center leading-tight`}>
+                      <h3 className="text-xl md:text-2xl font-bold text-primary mb-4 text-center leading-tight">
                         {principle.title}
                       </h3>
                       
@@ -108,7 +97,6 @@ const OpenSpaceMethod = () => {
               {principles.slice(3, 5).map((principle, index) => {
                 const Icon = principle.icon;
                 const delay = (index + 3) * 100;
-                const isEven = (index + 3) % 2 === 0;
                 
                 return (
                   <div
@@ -118,31 +106,21 @@ const OpenSpaceMethod = () => {
                     }`}
                     style={{ transitionDelay: `${delay}ms` }}
                   >
-                    <div className={`relative h-full bg-card border-2 ${
-                      isEven ? 'border-primary/30 hover:border-primary/60' : 'border-secondary/30 hover:border-secondary/60'
-                    } rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300`}>
+                    <div className="relative h-full min-h-[400px] bg-card border-2 border-primary/30 hover:border-primary/60 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
                       {/* Number badge */}
-                      <div className={`absolute -top-4 -right-4 w-12 h-12 rounded-full ${
-                        isEven ? 'bg-primary' : 'bg-secondary'
-                      } shadow-lg flex items-center justify-center`}>
+                      <div className="absolute -top-4 -right-4 w-12 h-12 rounded-full bg-primary shadow-lg flex items-center justify-center">
                         <span className="text-2xl font-bold text-primary-foreground">{principle.number}</span>
                       </div>
                       
                       {/* Icon */}
                       <div className="flex justify-center mb-6">
-                        <div className={`w-20 h-20 rounded-full ${
-                          isEven ? 'bg-primary/10' : 'bg-secondary/10'
-                        } flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                          <Icon className={`w-10 h-10 ${
-                            isEven ? 'text-primary' : 'text-secondary'
-                          }`} strokeWidth={2.5} />
+                        <div className="w-20 h-20 rounded-full bg-secondary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                          <Icon className="w-10 h-10 text-secondary" strokeWidth={2.5} />
                         </div>
                       </div>
                       
                       {/* Title */}
-                      <h3 className={`text-xl md:text-2xl font-bold ${
-                        isEven ? 'text-primary' : 'text-secondary'
-                      } mb-4 text-center leading-tight`}>
+                      <h3 className="text-xl md:text-2xl font-bold text-primary mb-4 text-center leading-tight">
                         {principle.title}
                       </h3>
                       
