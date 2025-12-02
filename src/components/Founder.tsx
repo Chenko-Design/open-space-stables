@@ -14,7 +14,7 @@ const Founder = () => {
               <img src={founderImage} alt="ד״ר עופר קומרובסקי" className="w-full md:h-full h-auto object-contain mx-auto group-hover:scale-110 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
-            <div className="md:w-[450px] md:flex-shrink-0 flex items-stretch mt-8 md:mt-0 md:pt-3">
+            <div className="md:w-[400px] md:flex-shrink-0 flex items-stretch mt-8 md:mt-0 md:pt-3">
               <div className="space-y-6 text-lg md:text-xl text-foreground leading-relaxed text-right font-sans">
                 <p>
                   המרחב הפתוח הוקם <span className="font-bold text-primary">בחזונו של עופר קומרובסקי</span> וממשיך לצמוח ולהתפתח בהובלתו. הקשר של עופר עם סוסים החל בילדותו במטעי השקדים של אביו בקיבוץ נגבה ולאחר מכן כנער גידל סוסים בשדות כפר אזר. לאחר שירותו הצבאי למד וטרינריה והתמחה ברפואת סוסים.
