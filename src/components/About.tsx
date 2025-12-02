@@ -13,7 +13,7 @@ const About = () => {
           </h2>
           <div className="md:flex md:items-stretch md:gap-10 lg:gap-12 md:justify-center">
             <div className="group order-last md:order-first md:w-[350px] md:flex-shrink-0 flex items-stretch overflow-hidden rounded-3xl shadow-2xl relative">
-              <img src={aboutImage} alt="ילד עם סוס בחווה" className="w-full md:h-full h-auto object-cover object-center mx-auto group-hover:scale-110 transition-transform duration-700" />
+              <img src={aboutImage} alt="ילד עם סוס בחווה" className="w-full md:h-full h-auto object-cover object-top mx-auto scale-[1.02] group-hover:scale-110 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
             <div className="md:w-[400px] md:flex-shrink-0 flex items-stretch mt-8 md:mt-0 md:pt-3">
