@@ -50,9 +50,9 @@ const OpenSpaceMethod = () => {
               שיטת המרחב הפתוח היא גישה טיפולית־קהילתית ייחודית, המשלבת עבודה עם בעלי חיים, אחריות אישית ומעגלי שייכות. השיטה פועלת בכמה עקרונות מרכזיים:
             </p>
             
-            {/* First row - 3 cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-6 md:mb-8">
-              {principles.slice(0, 3).map((principle, index) => {
+            {/* Full-width cards */}
+            <div className="space-y-6 md:space-y-8">
+              {principles.map((principle, index) => {
                 const Icon = principle.icon;
                 const delay = index * 100;
                 
@@ -64,70 +64,32 @@ const OpenSpaceMethod = () => {
                     }`}
                     style={{ transitionDelay: `${delay}ms` }}
                   >
-                    <div className="relative h-full min-h-[400px] bg-card border-2 border-primary/30 hover:border-primary/60 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
-                      {/* Number badge */}
-                      <div className="absolute -top-4 -right-4 w-12 h-12 rounded-full bg-primary shadow-lg flex items-center justify-center">
-                        <span className="text-2xl font-bold text-primary-foreground">{principle.number}</span>
-                      </div>
-                      
-                      {/* Icon */}
-                      <div className="flex justify-center mb-6">
-                        <div className="w-20 h-20 rounded-full bg-secondary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                          <Icon className="w-10 h-10 text-secondary" strokeWidth={2.5} />
+                    <div className="relative bg-card border-2 border-primary/30 hover:border-primary/60 rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                      <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
+                        {/* Number badge - positioned for mobile and desktop */}
+                        <div className="absolute -top-4 -right-4 md:relative md:top-0 md:right-0 flex-shrink-0">
+                          <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-primary shadow-lg flex items-center justify-center">
+                            <span className="text-2xl md:text-3xl font-bold text-primary-foreground">{principle.number}</span>
+                          </div>
+                        </div>
+                        
+                        {/* Icon */}
+                        <div className="flex-shrink-0 mx-auto md:mx-0">
+                          <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-secondary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <Icon className="w-10 h-10 md:w-12 md:h-12 text-secondary" strokeWidth={2.5} />
+                          </div>
+                        </div>
+                        
+                        {/* Content */}
+                        <div className="flex-1 text-right">
+                          <h3 className="text-2xl md:text-3xl font-bold text-primary mb-3 leading-tight">
+                            {principle.title}
+                          </h3>
+                          <p className="text-base md:text-lg text-foreground/90 leading-relaxed font-sans">
+                            {principle.content}
+                          </p>
                         </div>
                       </div>
-                      
-                      {/* Title */}
-                      <h3 className="text-xl md:text-2xl font-bold text-primary mb-4 text-center leading-tight">
-                        {principle.title}
-                      </h3>
-                      
-                      {/* Content */}
-                      <p className="text-base text-foreground/90 leading-relaxed text-right font-sans">
-                        {principle.content}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-            
-            {/* Second row - 2 cards centered */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
-              {principles.slice(3, 5).map((principle, index) => {
-                const Icon = principle.icon;
-                const delay = (index + 3) * 100;
-                
-                return (
-                  <div
-                    key={principle.number}
-                    className={`group transition-all duration-1000 ${
-                      isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-                    }`}
-                    style={{ transitionDelay: `${delay}ms` }}
-                  >
-                    <div className="relative h-full min-h-[400px] bg-card border-2 border-primary/30 hover:border-primary/60 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
-                      {/* Number badge */}
-                      <div className="absolute -top-4 -right-4 w-12 h-12 rounded-full bg-primary shadow-lg flex items-center justify-center">
-                        <span className="text-2xl font-bold text-primary-foreground">{principle.number}</span>
-                      </div>
-                      
-                      {/* Icon */}
-                      <div className="flex justify-center mb-6">
-                        <div className="w-20 h-20 rounded-full bg-secondary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                          <Icon className="w-10 h-10 text-secondary" strokeWidth={2.5} />
-                        </div>
-                      </div>
-                      
-                      {/* Title */}
-                      <h3 className="text-xl md:text-2xl font-bold text-primary mb-4 text-center leading-tight">
-                        {principle.title}
-                      </h3>
-                      
-                      {/* Content */}
-                      <p className="text-base text-foreground/90 leading-relaxed text-right font-sans">
-                        {principle.content}
-                      </p>
                     </div>
                   </div>
                 );
