@@ -1,23 +1,17 @@
 import founderImage from "@/assets/ofer-komrovsky.jpg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-
 const Founder = () => {
-  const { ref, isVisible } = useScrollReveal();
-  
-  return (
-    <section ref={ref} id="founder" className="py-24 bg-gradient-to-b from-muted to-background">
+  const {
+    ref,
+    isVisible
+  } = useScrollReveal();
+  return <section ref={ref} id="founder" className="py-24 bg-gradient-to-b from-muted to-background">
       <div className="container mx-auto px-8 sm:px-12 md:px-16 lg:px-[128px] xl:px-[192px] 2xl:px-[256px]">
         <div className={`max-w-7xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}>
-          <h2 className="text-5xl md:text-6xl font-handwriting font-bold mb-12 text-primary text-center">
-            ד״ר עופר קומרובסקי
-          </h2>
+          <h2 className="text-5xl md:text-6xl font-handwriting font-bold mb-12 text-primary text-center">על היזם - ד״ר עופר קומרובסקי</h2>
           <div className="md:flex md:items-stretch md:gap-10 lg:gap-12 md:justify-center mb-8">
             <div className="group order-last md:order-first md:w-[350px] md:flex-shrink-0 flex items-stretch overflow-hidden rounded-3xl shadow-2xl relative">
-              <img 
-                src={founderImage} 
-                alt="ד״ר עופר קומרובסקי" 
-                className="w-full md:h-full h-auto object-contain mx-auto group-hover:scale-110 transition-transform duration-700"
-              />
+              <img src={founderImage} alt="ד״ר עופר קומרובסקי" className="w-full md:h-full h-auto object-contain mx-auto group-hover:scale-110 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
             <div className="md:w-[450px] md:flex-shrink-0 flex items-stretch mt-8 md:mt-0 md:pt-3">
@@ -44,8 +38,6 @@ const Founder = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Founder;
